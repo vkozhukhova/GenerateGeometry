@@ -1,0 +1,439 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+\usepackage{indentfirst}
+\frenchspacing
+\usepackage{geometry}
+\geometry{left=3cm, right=1.5cm, top=2cm, bottom=1.5cm}
+\usepackage{ifthen}
+\usepackage{sagetex}
+\usepackage{soul}
+%\newcounter{zno} % счетчик номеров задач
+%%% Дополнительная работа с математикой
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools,bm} %
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+\usepackage{etoolbox}
+\usepackage{enumitem}
+\usepackage{lastpage}
+\usepackage{fancyhdr} % Колонтитулы
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.5pt}  % Толщина линейки, отчеркивающей верхний колонтитул
+\renewcommand{\footrulewidth}{0.5pt}
+\lfoot{\textit{В.~Н. Кожухова}}
+\rfoot{%Иванов Иван Иванович
+	\input{\jobname.txt}%
+	}
+%\rhead{Верхний правый}
+\chead{\textbf{ДИТИ НИЯУ МИФИ}, осенний семестр 2017-2018 уч. года}
+%\lhead{Верхний левый}
+%\cfoot{c. \thepage \; из \pageref{LastPage}} % По умолчанию здесь номер страницы
+
+
+
+
+\makeatletter
+\AddEnumerateCounter{\asbuk}{\russian@alph}{щ} % русские буквы в списках
+\makeatother
+
+%\renewcommand{\thesection}{Текущий контроль %\arabic{section}.} % Текущий контроль №. Название
+
+%\newcommand{\zadacha}[2]{%
+%	\refstepcounter{zno}\label{#1}
+%	\textbf{Задача \arabic{zno}}. #2%
+%} %Задача №. Текст. На номер можно ссылаться \ref{label}
+
+%\def\teachers{}
+%\newcommand{\mycomment}[1]{\ifdef{\teachers}{#1}{\hphantom{#1}%}}
+% есть def = показать ответы	
+
+\usepackage{exsheets}
+\DeclareTranslation{Russian}{exsheets-exercise-name}{Задача}
+\DeclareTranslation{Russian}{exsheets-question-name}{Вопрос}
+\DeclareTranslation{Russian}{exsheets-solution-name}{Ответ}
+\SetupExSheets[points]{name=б.}
+
+%\def\teachers{}
+\newcommand{\mycomment}{\ifdef{\teachers}{\printsolutions}{}}
+
+
+\begin{document}
+\thispagestyle{empty}
+%\maketitle
+
+\vspace{-10ex}
+	
+\begin{center}
+\Huge{Аналитическая геометрия}\\
+\vspace{-3ex}
+\section*{Текущий контроль 2}
+\end{center}
+\vspace{-2ex}	
+\textit{Стоимость: \pointssum* б.}
+\begin{flushleft}
+Направление подготовки: 09.03.02 Информационные системы и технологии %03.03.02 Физика %14.03.02 Ядерные физика и технологии  
+
+ФИО студента: %Иванов Иван Иванович
+ \input{\jobname.txt}
+
+Преподаватель: \textit{В.",Н. Кожухова}	
+\end{flushleft}	
+
+\subsection*{Простейшие задачи аналитической геометрии. \\ Полярные координаты}
+\begin{sagesilent}
+# 1) Вычислить площадь треугольника и найти длину высоты из вершины ??.
+A = vector([randint(-7, 7) for i in range(2)])
+B = vector([randint(-4, 4) for i in range(2)])
+C = vector([randint(-10, 10) for i in range(2)])
+AB = B-A
+AC = C-A
+BC = C-B
+crossm = matrix([AB, AC])
+while det(crossm)==0 : 
+      C = vector([randint(-10, 10) for i in range(2)])
+      AC = C-A
+      BC = C-B
+      crossm = matrix([AB, AC])
+SABC= abs(det(crossm)/2)
+ch1 = randint(1,3)
+if ch1 == 1 :
+   vertex = r"A"
+   hABC = 2*SABC/BC.norm()
+else :
+   if ch1 == 2 :
+      vertex = r"B"
+      hABC = 2*SABC/AC.norm()      
+   else :
+      vertex = r"C"
+      hABC = 2*SABC/AB.norm() 
+Gtriag=points([A,B,C], size=50, color='black', figsize=4)+line((A,B), color='black', figsize=4)+line((A,C), color='black', figsize=4)+line((B,C), color='black', figsize=4)
+# 2) Центр масс треугольника и углы
+angA = arccos(AB.dot_product(AC)/(AB.norm()*AC.norm())) 
+angB = arccos((-AB).dot_product(BC)/(AB.norm()*BC.norm()))
+angC = arccos((-AC).dot_product(-BC)/(AC.norm()*BC.norm()))
+angres = [] 
+if (angA==angB) or (angA==angC) or (angB==angC):
+   angres.append(r"равнобедренный")
+else :
+   angres.append(r"не равнобедренный") 
+if (angA==pi/2) or (angB==pi/2) or (angC==pi/2):
+   angres.append(r"прямоугольный")
+else :
+   angres.append(r"не прямоугольный") 
+# 3) Длина биссектрисы при вершине ...
+if ch1 == 1 : # вершина A
+   lambd = AB.norm()/AC.norm()
+   D = vector([(B[0]+lambd*C[0])/(1+lambd), (B[1]+lambd*C[1])/(1+lambd)])
+   AD = D-A
+   biss = AD.norm()
+else :
+   if ch1 == 2 : # вершина B
+      lambd = BC.norm()/AB.norm()
+      D = vector([(C[0]+lambd*A[0])/(1+lambd), (C[1]+lambd*A[1])/(1+lambd)])
+      BD = D-B
+      biss = BD.norm()
+   else : # вершина C
+      lambd = AC.norm()/BC.norm()
+      D = vector([(A[0]+lambd*B[0])/(1+lambd), (A[1]+lambd*B[1])/(1+lambd)])
+      CD = D-C
+      biss = CD.norm()
+# 4) Перенос  и поворот системы координат
+S = FiniteEnumeratedSet([pi/6, pi/4, pi/3, pi/2, 2*pi/3, 3*pi/4, 5*pi/6, 7*pi/6, 5*pi/4, 4*pi/3, 3*pi/2,5*pi/3,7*pi/4,11*pi/6, arctan(3/4), arctan(5/12), arctan(4/3), arctan(12/5), arctan(8/15), arctan(15/8), arctan(7/24), arctan(24/7)])
+ang = S.random_element()
+rotm = Matrix([[cos(ang), -sin(ang)],[sin(ang),cos(ang)]])
+if ch1 == 1 :
+   An = vector([0,0])
+   Bn = rotm.inverse()*AB 
+   Cn = rotm.inverse()*AC 
+else :
+   if ch1 == 2 :
+      Bn = vector([0,0])
+      An = rotm.inverse()*(-AB) 
+      Cn = rotm.inverse()*BC 
+   else :
+      Cn = vector([0,0])
+      An = rotm.inverse()*(-AC) 
+      Bn = rotm.inverse()*(-BC) 
+# Точки в ПСК и ДПСК
+def Polar_to_Cart(polar_v) :
+    return vector([polar_v[0]*cos(polar_v[1]), polar_v[0]*sin(polar_v[1])])
+def Cart_to_Polar(cart_v):
+    return vector([sqrt(cart_v[0]^2 + cart_v[1]^2), atan2(cart_v[1],cart_v[0])])
+M1 = vector([randint(-7, 7) for i in range(2)])
+M2 = vector([randint(-4, 4) for i in range(2)])
+M3 = vector([randint(-10, 10) for i in range(2)])
+S1 = FiniteEnumeratedSet([pi/6, pi/4, pi/3, pi/2, 2*pi/3, 3*pi/4, 5*pi/6, 7*pi/6, 5*pi/4, 4*pi/3, 3*pi/2,5*pi/3,7*pi/4,11*pi/6,pi,-pi/6, -pi/4, -pi/3, -pi/2, -2*pi/3, -3*pi/4, -5*pi/6, -7*pi/6, -5*pi/4, -4*pi/3, -3*pi/2,-5*pi/3,-7*pi/4,-11*pi/6,-pi])
+M4 = vector([randint(1, 10),S1.random_element()])
+M5 = vector([randint(1, 10),S1.random_element()])
+M6 = vector([randint(1, 10),S1.random_element()])
+M4C=Polar_to_Cart(M4)
+M5C=Polar_to_Cart(M5)
+M6C=Polar_to_Cart(M6)
+P2 = {'M1':M1,'M2':M2,'M3':M3,'M4':M4C,'M5':M5C,'M6':M6C}
+ymin=min(M1[1],M2[1],M3[1],M4C[1],M5C[1],M6C[1])
+ymax=max(M1[1],M2[1],M3[1],M4C[1],M5C[1],M6C[1])
+if sign(ymin) == sign(ymax):
+   if sign(ymin)==-1:
+        ymax=abs(ymax)
+   else :
+        if sign(ymin)==0:
+           ymin=-5
+           ymax=5
+        else:
+           ymin=-ymin   
+xmin=min(M1[0],M2[0],M3[0],M4C[0],M5C[0],M6C[0])
+xmax=max(M1[0],M2[0],M3[0],M4C[0],M5C[0],M6C[0])
+if sign(xmin) == sign(xmax):
+  if sign(xmin)==-1:
+     xmax=abs(xmax)
+  else :
+     if sign(xmin)==0:
+        xmin=-5
+        xmax=5
+     else:
+        xmin=-xmin
+G1 = points(P2.values(), size = 50, color = 'black', aspect_ratio=1, ymin=1.5*ymin, ymax=1.5*ymax, figsize=4, xmin=1.5*xmin,xmax=1.5*xmax)
+i=0
+for p in P2.keys():
+    G1 += text('  %s'%p,P2.values()[i],horizontal_alignment='left',color='black')
+    i=i+1
+var('x,y,xc,yc,a,b')
+eleqn=((x-xc)^2/a^2+(y-yc)^2/b^2-1==0)# уравнение эллипса в канон виде
+# первое задание - окружность в центром (0,0)
+a=sqrt(randint(1,10)^2/randint(1,10)^2)
+b=a
+xc=0
+yc=0
+el2=eleqn(xc=xc,yc=yc,a=a,b=b).expand()
+el3=el2.multiply_both_sides(el2.left().denominator()) # конечное уравнение окружности
+# окружность в ПСК
+var('rho, varphi')
+el4=el3.subs(x=rho*cos(varphi), y=rho*sin(varphi)).simplify_trig()
+# график окружности
+G2=implicit_plot(el3, (x,-1.5*a,1.5*a),(y,-1.5*a,1.5*a), axes='true', figsize=4, color = 'black')
+# второе задание - окружность со смещенным центром
+a=sqrt(randint(1,10)^2/randint(1,10)^2)# положительное число
+ch2=randint(1,2)
+if ch2 ==1 :
+   a=a
+else :
+   a=-a # можно и отрицательное
+b=a
+ch3 = randint(1,2) # сдвиг по X или по Y
+if ch3 ==1 :
+   xc=a
+   yc=0
+else :
+   xc=0
+   yc=a
+el5=eleqn(xc=xc,yc=yc,a=a,b=b).expand()
+el6=el5.multiply_both_sides(el5.left().denominator()).simplify() # конечное уравнение окружности
+# окружность в ПСК
+el7=el6.subs(x=rho*cos(varphi), y=rho*sin(varphi)).simplify_trig()
+el8=el7.divide_both_sides(rho).expand().solve(rho)[0]
+# график окружности
+if xc==0:
+   if yc<0:
+      ymax = abs(a/2)
+      ymin = 2*a
+      xmin=a
+      xmax=-a
+   else:
+      ymin = -a/2
+      ymax = 2*a
+      xmin=-a
+      xmax=a
+else:
+   if xc<0:
+      xmax = abs(a/2)
+      xmin = 2*a
+      ymin=a
+      ymax=-a
+   else:
+      xmin = -a/2
+      xmax = 2*a
+      ymin=-a
+      ymax=a
+G3=implicit_plot(el6, (x,1.5*xmin,1.5*xmax),(y,1.5*ymin,1.5*ymax), axes='true', figsize=4, color = 'black')
+G3+=point((xc,yc), size=25, color='black')
+G3 += text('  (%s,%s)'%(xc,yc),(xc+xc/3,yc-yc/3),horizontal_alignment='left',color='black')
+# лемнискаты
+a=sqrt(randint(1,10)^2/randint(1,10)^2)
+ch4=randint(1,2)
+if ch4 == 1:
+   lemeqn = (x^2+y^2)^2==2*a^2*(x^2-y^2)
+else:
+   lemeqn = (x^2+y^2)^2==4*a^2*x*y
+lem2=lemeqn.subs(x=rho*cos(varphi), y=rho*sin(varphi)).simplify_trig().divide_both_sides(rho^2).expand().reduce_trig()
+G4=implicit_plot(lemeqn, (x,-1.5*a,1.5*a),(y,-1.5*a,1.5*a), axes='true', figsize=4, color = 'black')
+# спирали
+a=sqrt(randint(1,10)^2/randint(1,10)^2)
+ch5=randint(1,2)
+if ch5 ==1 :
+   a=a
+else :
+   a=-a # можно и отрицательное
+spireqn=rho==a*varphi
+spi2=(spireqn.subs(rho=sqrt(x^2+y^2), varphi=arctan(y/x)))^2
+G5=polar_plot(a*x, (x,0,2*pi), color='black', axes='true', figsize=3)
+# кардиоида
+a=randint(1,10)
+ch6=randint(1,4)
+if ch6 ==1 :
+   cardeqn = rho==a*(1-sin(varphi))
+else :
+   if ch6==2:
+      cardeqn = rho==a*(1+sin(varphi))
+   else:
+      if ch6==3:
+         cardeqn = rho==a*(1-cos(varphi))
+      else:
+         cardeqn = rho==a*(1+cos(varphi))
+card2=cardeqn.subs(rho=sqrt(x^2+y^2), varphi=arctan(y/x)).factor().canonicalize_radical().multiply_both_sides(sqrt(x^2 + y^2))
+if card2.right().coefficient(x,1)==0:
+     card3=card2.subtract_from_both_sides(card2.right().coefficient(y,1)*y)
+else:
+     card3=card2.subtract_from_both_sides(card2.right().coefficient(x,1)*x)
+card3=card3^2
+G6=polar_plot(cardeqn.right(), (varphi,0,2*pi), color='black', axes='true', figsize=3)
+# полярная роза
+Spolar=FiniteEnumeratedSet([5/2,-5/2,3/2,-3/2,7/2,-7/2,2,3,4,5,6,7,-2,-3,-4,-5,-6,-7,-2/3,2/3])
+a=Spolar.random_element()
+b=randint(2,4)
+ch7=randint(1,2)
+if ch7==1:
+   roseeqn=rho==a*cos(b*varphi)
+else:
+   roseeqn=rho==a*sin(b*varphi)
+ros2=((roseeqn.subs(rho=sqrt(x^2+y^2), varphi=arctan(y/x)).simplify_trig().canonicalize_radical())^2).factor()
+ros3=ros2.multiply_both_sides(ros2.right().denominator())
+G7=polar_plot(roseeqn.right(), (varphi,0,2*pi), color='black', axes='true', figsize=3)
+\end{sagesilent}
+
+\vspace{2ex}	
+\begin{question}{1}\label{ztriag}
+	Даны вершины треугольника $ABC$: \[A\sage{A}, B\sage{B}, C\sage{C}.\] 
+\begin{enumerate}
+\item Вычислить площадь треугольника и найти длину высоты $\sagestr{vertex}H$.
+\item Определить аналитически:
+\begin{enumerate}[label=\asbuk*),ref=\asbuk*]
+	\item центр масс треугольника $ABC$, считая, что в его вершинах находятся равные массы;		
+	\item координаты векторов, приложенных к вершинам треугольника $ABC$  и совпадающих с его медианами;
+	\item есть ли тупой угол среди внутренних углов треугольника $ABC$;
+	\item является ли треугольник $ABC$ равнобедренным, прямоугольным?
+\end{enumerate}	
+\end{enumerate}	
+\end{question}
+\begin{solution}
+\sageplot{Gtriag}
+	
+\ensuremath{
+	\displaystyle{S_{ABC}=\sage{SABC}, h=\sage{hABC}}           
+}
+
+\ensuremath{\begin{aligned}
+		&\text{Центр масс }O\sage{(A+B+C)/3}, \\
+		&\text{медианы } AM=\sage{(B+C)/2-A}, BM=\sage{(A+C)/2-B}, CM=\sage{(B+A)/2-C} \\
+		&\angle A = \sage{angA} \approx \sage{round(angA*180/pi)}^\circ\\
+		&\angle B = \sage{angB} \approx \sage{round(angB*180/pi)}^\circ\\
+		&\angle C = \sage{angC} \approx \sage{round(angC*180/pi)}^\circ\\
+	\end{aligned}}
+	
+	Треугольник \sagestr{angres[0]}, \sagestr{angres[1]}.
+\end{solution}
+
+\begin{question}{1}
+	По данным задачи \ref{ztriag}:
+\begin{enumerate}
+\item Вычислить длину биссектрисы $\sagestr{vertex}D$ треугольника $ABC$. 
+
+\textit{Примечание}. Координаты точки $D$ необходимо вычислить \textbf{точно}, даже при наличии сложных радикалов. При этом длину биссектрисы в таком случае нужно вычислить приближенно, не забыв записать точный ответ без преобразований.
+
+Пример: если для треугольника с координатами вершин $A(3, 5), B(-4, 4), C(-7, -7)$ требуется вычислить длину биссектрисы, проведенной из вершины $C$, то ответ следует записать так:
+
+$CD = \sqrt{{\left(\dfrac{4 \, \sqrt{130} \sqrt{61} + 325}{\sqrt{130} \sqrt{61} + 65} + 7\right)}^{2} + {\left(-\dfrac{4 \, \sqrt{130} \sqrt{61} - 195}{\sqrt{130} \sqrt{61} + 65} + 7\right)}^{2}}
+\approx 12.9$
+\item Найти координаты вершин треугольника $ABC$ в новой системе координат, считая что начало координат перенесено в точку $\sagestr{vertex}$, а оси повернуты на угол \ensuremath{\displaystyle{\alpha=\sage{ang}}}.
+\end{enumerate}
+\end{question}
+\begin{solution}
+\ensuremath{
+	\displaystyle{\sagestr{vertex}D=\sage{biss}\approx\sage{n(biss, digits=4)}}           
+}
+
+\ensuremath{
+	\displaystyle{A\sage{An}, B\sage{Bn}, C\sage{Cn}}           
+}
+\end{solution}
+
+\begin{question}{1}
+Заданы координаты точек $M_1, M_2, M_3$ в ДПСК и $M_4, M_5, M_6$ в ПСК. Перевести точки $M_1, M_2, M_3$ в ПСК, $M_4, M_5, M_6$ в ДПСК и построить точки $M_1, M_2, M_3$, $M_4, M_5, M_6$, совместив эти системы координат.
+\begin{equation*}
+\begin{aligned}
+M_1\sage{M1}&,  M_2\sage{M2}, M_3\sage{M3},\\
+M_4\sage{M4}&,  M_5\sage{M5}, M_6\sage{M6}
+\end{aligned}	 
+\end{equation*}
+\end{question}
+\begin{solution}
+\ensuremath{\begin{aligned}
+		&M_1\sage{Cart_to_Polar(M1)}, M_2\sage{Cart_to_Polar(M2)},  M_3\sage{Cart_to_Polar(M3)} \\
+		&M_4\sage{M4C}, M_5\sage{M5C}, M_6\sage{M6C}
+	\end{aligned}}
+		
+	\sageplot{G1}
+\end{solution}
+
+\begin{question}{1}
+Даны уравнения кривых в ДПСК. Получить их уравнения в ПСК. Построить кривые в ПСК.
+\begin{enumerate}
+	\item \ensuremath{\displaystyle{\sage{el3}}}
+	\item \ensuremath{\displaystyle{\sage{el6}}}
+	\item \ensuremath{\displaystyle{\sage{lemeqn}}}
+\end{enumerate}	
+\end{question}
+\begin{solution}
+\ensuremath{\displaystyle{\sage{el4.solve(rho)[1]}, \sage{el8}, \sage{lem2}}}
+
+\sageplot{G2}\sageplot{G3}
+
+\sageplot{G4}
+\end{solution}
+
+\begin{question}{1}
+Даны уравнения кривых в ПСК. Построить эти кривые в ПСК. Получить их уравнения в ДПСК. 
+\begin{enumerate}
+	\item \ensuremath{\displaystyle{\sage{spireqn}}}
+	\item \ensuremath{\displaystyle{\sage{cardeqn}}}
+	\item \ensuremath{\displaystyle{\sage{roseeqn}}}
+\end{enumerate}
+\end{question}
+\begin{solution}
+\ensuremath{\displaystyle{	\sage{spi2}, \sage{card3},}}
+
+\ensuremath{\displaystyle{\sage{ros3}}}
+
+\sageplot{G5}\sageplot{G6}	
+
+\sageplot{G7}
+\end{solution}
+
+\mycomment
+
+\begin{tabular}{|l|*{\numberofquestions}{c|}c|}\hline
+Вопрос &
+\ForEachQuestion{\QuestionNumber{#1}\iflastquestion{}{&}} &
+Всего \\ \hline
+Баллы &
+\ForEachQuestion{\GetQuestionProperty{points}{#1}\iflastquestion{}{&}} &
+\pointssum* \\ \hline
+Набрано &
+\ForEachQuestion{\iflastquestion{}{&}} & \\ \hline
+\end{tabular}
+
+
+
+
+\end{document}

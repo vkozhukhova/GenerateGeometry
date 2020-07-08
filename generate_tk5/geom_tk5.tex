@@ -1,0 +1,424 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+\usepackage{indentfirst}
+\frenchspacing
+\usepackage{geometry}
+\geometry{left=3cm, right=1.5cm, top=2cm, bottom=1.5cm}
+\usepackage{ifthen}
+\usepackage{sagetex}
+\usepackage{soul}
+%\newcounter{zno} % счетчик номеров задач
+%%% Дополнительная работа с математикой
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools,bm} %
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+\usepackage{etoolbox}
+\usepackage{enumitem}
+\usepackage{lastpage}
+\usepackage{fancyhdr} % Колонтитулы
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.5pt}  % Толщина линейки, отчеркивающей верхний колонтитул
+\renewcommand{\footrulewidth}{0.5pt}
+\lfoot{\textit{В.~Н. Кожухова}}
+\rfoot{%Иванов Иван Иванович
+	\input{\jobname.txt}%
+	}
+%\rhead{Верхний правый}
+\chead{\textbf{ДИТИ НИЯУ МИФИ}, осенний семестр 2017-2018 уч. года}
+%\lhead{Верхний левый}
+%\cfoot{c. \thepage \; из \pageref{LastPage}} % По умолчанию здесь номер страницы
+
+\makeatletter
+\AddEnumerateCounter{\asbuk}{\russian@alph}{щ} % русские буквы в списках
+\makeatother
+
+\usepackage{exsheets}
+\DeclareTranslation{Russian}{exsheets-exercise-name}{Задача}
+\DeclareTranslation{Russian}{exsheets-question-name}{Вопрос}
+\DeclareTranslation{Russian}{exsheets-solution-name}{Ответ}
+\SetupExSheets[points]{name=б.}
+
+%\def\teachers{}
+\newcommand{\mycomment}{\ifdef{\teachers}{\printsolutions}{}}
+
+\begin{document}
+\thispagestyle{empty}
+
+\vspace{-10ex}
+	
+\begin{center}
+\Huge{Аналитическая геометрия}\\
+\vspace{-3ex}
+\section*{Текущий контроль 5}
+\end{center}
+\vspace{-2ex}	
+\textit{Стоимость: \pointssum* б.}
+\begin{flushleft}
+Направление подготовки:  09.03.02 Информационные системы и технологии %03.03.02 Физика %14.03.02 Ядерные физика и технологии 
+
+ФИО студента: %Иванов Иван Иванович
+ \input{\jobname.txt}
+
+Преподаватель: \textit{В.",Н. Кожухова}	
+\end{flushleft}	
+
+\subsection*{Кривые и поверхности второго порядка}
+\begin{sagesilent}
+# составление уравнение эллипса и параболы
+var('x,y,rho,varphi')
+# полуоси и фокальный параметр
+a = randint(1, 10)
+b=a
+p=0
+curve=randint(1,2)
+Os=randint(1, 2)
+while a==b or p==0:
+  b=randint(1, 10)
+  p=randint(-10, 10)
+# ось симметрии и полуоси
+if Os==1:
+  symm=r'Ox'
+else:
+  symm=r'Oy'
+if curve==1:
+  txtcurve=r'эллипса'
+else:
+  txtcurve=r'гиперболы'
+if Os==1 and curve==1:
+  # эллипс
+  answ1=x^2/a^2+y^2/b^2==1
+  c=sqrt(abs(a^2-b^2))
+  if a>b:
+    F1=vector([c,0])
+    F2=vector([-c,0])
+  else:
+    F1=vector([0,c])
+    F2=vector([0,-c])    
+  # парабола
+  answ2=y^2==2*p*x
+  F=vector([p/2,0])
+else:
+  if Os==1 and curve==2:
+     # гипербола
+     answ1=x^2/a^2-y^2/b^2==1
+     c=sqrt(a^2+b^2)
+     F1=vector([c,0])
+     F2=vector([-c,0])
+     # парабола
+     answ2=y^2==2*p*x
+     F=vector([p/2,0])
+  else:
+     if Os==2 and curve==1:
+        # эллипс
+        answ1=x^2/a^2+y^2/b^2==1
+        c=sqrt(abs(a^2-b^2))
+        if a>b:
+          F1=vector([c,0])
+          F2=vector([-c,0])
+        else:
+          F1=vector([0,c])
+          F2=vector([0,-c])    
+        # парабола
+        answ2=x^2==2*p*y
+        F=vector([0,p/2])
+     else:
+        # гипербола
+        answ1=x^2/a^2-y^2/b^2==1
+        c=sqrt(a^2+b^2)
+        F1=vector([c,0])
+        F2=vector([-c,0])
+        # парабола
+        answ2=x^2==2*p*y
+        F=vector([0,p/2])
+eq1=answ1
+eq2=eq1.multiply_both_sides(lcm(a^2,b^2))
+eq2=eq2.subs(x==rho*cos(varphi), y==rho*sin(varphi))
+eq2=eq2.trig_simplify()    
+if eq2.find(cos(varphi))==[]:
+   eq2=eq2.subs(sin(varphi)^2==1/2-cos(2*varphi)/2)
+else:
+   eq2=eq2.subs(cos(varphi)^2==1/2+cos(2*varphi)/2)
+eq2=eq2.left().collect(rho^2)==eq2.right()
+eq2=eq2.divide_both_sides(eq2.left()).multiply_both_sides(rho^2)
+eq3=rho==sqrt(eq2.right()).simplify()
+polar1=eq3 
+eq1=answ2
+eq2=eq1.multiply_both_sides(lcm(a^2,b^2))
+eq2=eq2.subs(x==rho*cos(varphi), y==rho*sin(varphi))
+eq2=eq2.trig_simplify()    
+if eq2.find(cos(varphi))==[]:
+  eq2=eq2.subs(sin(varphi)^2==1/2-cos(2*varphi)/2)
+else:
+  eq2=eq2.subs(cos(varphi)^2==1/2+cos(2*varphi)/2) 
+eq2=eq2.divide_both_sides(rho)
+eq3=eq2.divide_both_sides(eq2.left()).multiply_both_sides(rho)
+polar2=eq3
+G1=implicit_plot(answ1, (x,-2*max(a,c),2*max(a,c)), (y,-2*max(a,c),2*max(a,c)), axes='true', figsize=3, color = 'black')
+#G1=polar_plot(polar1.right(), (varphi,0,2*pi),color='black', axes='true', #figsize=3)
+G2=implicit_plot(answ2, (x,-10,10), (y,-10,10), axes='true', figsize=3, color = 'black')
+# составление уравнения по точке и расстоянию до кривой
+a1=0
+b1=0
+while a1==0 or b1==0:
+   A=vector([randint(-7, 7) for i in range(2)])
+   S=FiniteEnumeratedSet([1/2,1/3,1,2,3,3/2,2/3])
+   n=S.random_element()
+   ch1=randint(1,2)
+   c=randint(-4,7)
+   if ch1==1:
+        l=x-c==0
+   else:
+        l=y-c==0
+   eq1=sqrt((x-A[0])^2+(y-A[1])^2)==n*(l.left())
+   eq2=eq1^2
+   eq3=eq2.canonicalize_radical()
+   eq4=eq3.left()-eq3.right()==0
+   a1=eq4.left().coefficient(x,2)
+   a2=eq4.left().coefficient(x,1)
+   c1=eq4.left().coefficient(x,0).coefficient(y,0)
+   b1=eq4.left().coefficient(y,2)
+   b2=eq4.left().coefficient(y,1)
+eq5=x^2+a2*x/a1
+eq6=y^2+b2*y/b1
+var('cx,cy,k1,k2')
+from sympy import solve
+s1=solve(eq5-((x-cx)^2+k1),[cx,k1])
+s2=solve(eq6-((y-cy)^2+k2),[cy,k2])
+eq7=a1*(x-s1[0][0])^2+b1*(y-s2[0][0])^2==-a1*s1[0][1]-b1*s2[0][1]-c1
+if eq7.rhs()==0:
+   answ3=eq7
+else:
+   answ3=eq7.divide_both_sides(eq7.rhs())
+# приведение к каноническому виду
+# гиперболический тип
+def MakeEquationHypElps(a,b,ch1,mysgn):
+    if mysgn==1:
+      eq=x^2/a^2+y^2/b^2==ch1
+    else:
+      eq=x^2/a^2-y^2/b^2==ch1
+    return eq
+ah=0
+bh=0
+while ah==bh:
+    bh=randint(1, 10)
+    ah=randint(1, 10)
+ch1h=randint(-1,1)
+hyperb=MakeEquationHypElps(ah, bh, ch1h, 2) 
+ae=0
+be=0
+while ae==be:
+   be=randint(1, 10)
+   ae=randint(1, 10)
+ch1e=randint(-1,1)
+elps=MakeEquationHypElps(ae, be, ch1e, 1) 
+def CanonToGeneralHypElps(eq,a,b):
+    x0=randint(-10,10)
+    y0=randint(-10,10)
+    S = FiniteEnumeratedSet([pi/6, pi/4, pi/3, 2*pi/3, 3*pi/4, 5*pi/6, 7*pi/6, 5*pi/4, 4*pi/3, 5*pi/3,7*pi/4,11*pi/6, arctan(3/4), arctan(5/12), arctan(4/3), arctan(12/5), arctan(8/15), arctan(15/8), arctan(7/24), arctan(24/7)])
+    ang = S.random_element()
+    eq1=eq.add_to_both_sides(-eq.right()).simplify()
+    eq2=eq1.subs(x==x*cos(ang)+y*sin(ang), y==-x*sin(ang)+y*cos(ang))
+    eq3=eq2.canonicalize_radical()
+    eq4=eq3.multiply_both_sides(eq3.left().denominator())
+    eq5=eq4.subs(x==x-x0,y==y-y0).expand()
+    return [x0,y0,ang,eq5]
+hyp_task=CanonToGeneralHypElps(hyperb,ah,bh)
+G3=implicit_plot(hyp_task[3].left(), (x,-50,50), (y,-50,50), axes='true', figsize=3, color = 'red')
+elps_task=CanonToGeneralHypElps(elps,ae,be)
+G4=implicit_plot(elps_task[3].left(), (x,-50,50), (y,-50,50), axes='true', figsize=3, color = 'blue')
+# параболу делаем!
+ch1=randint(1,6)
+ch2=randint(1,2)
+p1=0
+while p1==0:
+    p1=randint(-10,10)
+if ch1<=4:
+     if ch2==1:
+         parab=y^2==2*p1*x
+     else:
+         parab=x^2==2*p1*y
+else:   
+     if ch2==1 and p1>0:
+         parab=y^2==p1^2
+     elif ch2==1 and p1<0:
+         parab=y^2==-p1^2
+     elif ch2==2 and p1>0:
+         parab=x^2==p1^2
+     else:
+         parab=x^2==-p1^2     
+def CanonToGeneralParab(eq):
+    x0=randint(-10,10)
+    y0=randint(-10,10)
+    S = FiniteEnumeratedSet([pi/6, pi/4, pi/3, 2*pi/3, 3*pi/4, 5*pi/6, 7*pi/6, 5*pi/4, 4*pi/3, 5*pi/3,7*pi/4,11*pi/6, arctan(3/4), arctan(5/12), arctan(4/3), arctan(12/5), arctan(8/15), arctan(15/8), arctan(7/24), arctan(24/7)])
+    ang = S.random_element()
+    eq1=eq.add_to_both_sides(-eq.right()).simplify()
+    eq2=eq1.subs(x==x-x0,y==y-y0).expand()
+    eq3=eq2.subs(x==x*cos(ang)+y*sin(ang), y==-x*sin(ang)+y*cos(ang)).expand()
+    eq4=eq3.multiply_both_sides(eq3.left().denominator())
+    return [x0,y0,ang,eq4]
+parab_task=CanonToGeneralParab(parab)
+G5=implicit_plot(parab_task[3].left(), (x,-50,50), (y,-50,50), axes='true', figsize=3, color = 'green')
+# робим поверхности. сначала со всеми тремя переменными (12 вариантов)
+ch1=randint(1,12)
+ch2=randint(-1,1)
+ch3=randint(1,2)
+if ch3==1:
+   ch3=-1
+else:
+   ch3=1
+var('z')
+abc=vector([randint(1,10) for i in range(3)])
+aw=abc[0]
+bw=abc[1]
+cw=abc[2]
+if ch1<=3:                                      
+     eqconic=x^2/aw^2+y^2/bw^2+z^2/cw^2==1       
+elif ch1==4:
+     eqconic=x^2/aw^2+y^2/bw^2-z^2/cw^2==ch2
+elif ch1==5:
+     eqconic=x^2/aw^2-y^2/bw^2+z^2/cw^2==ch2
+elif ch1==6:
+     eqconic=-x^2/aw^2+y^2/bw^2+z^2/cw^2==ch2
+elif ch1==7:
+     eqconic=x^2/aw^2+y^2/bw^2==ch3*2*z
+elif ch1==8:
+     eqconic=x^2/aw^2+z^2/cw^2==ch3*2*y
+elif ch1==9:
+     eqconic=y^2/bw^2+z^2/cw^2==ch3*2*x
+elif ch1==10:
+     eqconic=x^2/aw^2-y^2/bw^2==ch3*2*z
+elif ch1==11:
+     eqconic=x^2/aw^2-z^2/cw^2==ch3*2*y
+else:
+     eqconic=y^2/bw^2-z^2/cw^2==ch3*2*x
+x0y0z0=zero_vector(3)
+while x0y0z0==zero_vector(3):
+     x0y0z0=vector([randint(-10,10) for i in range(3)])
+eq1=eqconic.subs(x==x-x0y0z0[0],y==y-x0y0z0[1],z==z-x0y0z0[2])
+eq2=eq1.expand()
+eq3=eq2.add_to_both_sides(-eq2.right())
+eq4=eq3.multiply_both_sides(eq3.left().denominator())
+conic_task=[x0y0z0, eq4]
+# робим поверхности. теперь цилиндрические (12 вариантов)
+ch1=randint(1,12)
+ch2=randint(-1,1)
+ch3=randint(1,2)
+if ch3==1:
+   ch3=-1
+else:
+   ch3=1
+pabc=vector([randint(1,10) for i in range(4)])
+aw=pabc[0]
+bw=pabc[1]
+cw=pabc[2]
+pw=pabc[3]
+if ch1==1:                                      
+   eqcyl=x^2==ch3*2*pw*y       
+elif ch1==2:
+   eqcyl=y^2==ch3*2*pw*x
+elif ch1==3:
+   eqcyl=x^2==ch3*2*pw*z
+elif ch1==4:
+   eqcyl=z^2==ch3*2*pw*x
+elif ch1==5:
+   eqcyl=y^2==ch3*2*pw*z
+elif ch1==6:
+   eqcyl=z^2==ch3*2*pw*y
+elif ch1==7:
+   eqcyl=x^2/aw^2+y^2/bw^2==1
+elif ch1==8:
+   eqcyl=x^2/aw^2+z^2/cw^2==1
+elif ch1==9:
+   eqcyl=y^2/bw^2+z^2/cw^2==1
+elif ch1==10:
+   eqcyl=x^2/aw^2-y^2/bw^2==ch2
+elif ch1==11:
+   eqcyl=x^2/aw^2-z^2/cw^2==ch2
+else:
+   eqcyl=y^2/bw^2-z^2/cw^2==ch2
+x0y0z0=zero_vector(3)
+while x0y0z0==zero_vector(3):
+   x0y0z0=vector([randint(-10,10) for i in range(3)])
+eq1=eqcyl.subs(x==x-x0y0z0[0],y==y-x0y0z0[1],z==z-x0y0z0[2])
+eq2=eq1.expand()
+eq3=eq2.add_to_both_sides(-eq2.right())
+eq4=eq3.multiply_both_sides(eq3.left().denominator())
+cyl_task=[x0y0z0, eq4]
+\end{sagesilent}
+
+\vspace{2ex}	
+
+\begin{question}{1}
+	\begin{enumerate}
+\item Составить каноническое уравнение \sagestr{txtcurve} с параметрами $a=\sage{a}$ и $b=\sage{b}$ в ДПСК, выписать координаты фокусов. Перейти к полярному уравнению и построить кривую в ПСК.
+\item Составить каноническое уравнение параболы с вершиной в точке $(0, 0)$ с заданным фокальным параметром $p=\sage{p}$ и осью симметрии \textit{\sagestr{symm}}. Перейти к полярному уравнению и построить кривую в ПСК.
+	\end{enumerate}
+\end{question}
+\begin{solution}
+Уравнение \sagestr{txtcurve}: \ensuremath{\displaystyle{\sage{answ1}}}, фокусы $F_1\sage{F1}, F_2\sage{F2}$
+
+Уравнение параболы: $\sage{answ2}$, фокус \ensuremath{\displaystyle{F\sage{F}}} 
+
+Полярные уравнения: \ensuremath{\displaystyle{\sage{polar1}, \sage{polar2}}}
+
+\sageplot{G1}\sageplot{G2}
+\end{solution}
+
+\begin{question}{1}
+Для каждой точки кривой отношение расстояния до точки $A\sage{A}$ к расстоянию до прямой $l:\sage{l}$ равно \ensuremath{\displaystyle{\sage{n}}}. Найти уравнение кривой на плоскости, привести полученное уравнение к каноническому виду, указать тип кривой и, если это возможно, построить ее.	
+\end{question}
+\begin{solution}
+\ensuremath{\displaystyle{\sage{answ3}}}
+\end{solution}
+
+\begin{question}{2}
+Привести уравнение кривой второго порядка к каноническому виду и, если это возможно, построить ее.
+\begin{enumerate}
+	\item \ensuremath{\displaystyle{\sage{hyp_task[3]}}}
+	\item \ensuremath{\displaystyle{\sage{elps_task[3]}}}
+	\item \ensuremath{\displaystyle{\sage{parab_task[3]}}}
+\end{enumerate}	
+\end{question}
+\begin{solution}
+\begin{enumerate}
+	\item \ensuremath{\displaystyle{\sage{hyperb}, \text{центр } (\sage{hyp_task[0]}, \sage{hyp_task[1]}), \angle\varphi=\sage{hyp_task[2]}}}
+	\item \ensuremath{\displaystyle{\sage{elps}, \text{центр } (\sage{elps_task[0]}, \sage{elps_task[1]}), \angle\varphi=\sage{elps_task[2]}}}
+    \item \ensuremath{\displaystyle{\sage{parab}, \text{центр } (\sage{parab_task[0]}, \sage{parab_task[1]}), \angle\varphi=\sage{parab_task[2]}}}
+\end{enumerate}	
+
+\sageplot{G3}\sageplot{G4}	
+
+\sageplot{G5}
+\end{solution}
+
+\begin{question}{1}
+Привести уравнение поверхности второго порядка к каноническому виду и построить ее.
+\begin{enumerate}
+	\item \ensuremath{\displaystyle{\sage{conic_task[1]}}}
+    \item \ensuremath{\displaystyle{\sage{cyl_task[1]}}}
+\end{enumerate}		
+\end{question}
+\begin{solution}
+\begin{enumerate}
+	\item \ensuremath{\displaystyle{\sage{eqconic}, \text{центр } \sage{conic_task[0]}}}
+	\item \ensuremath{\displaystyle{\sage{eqcyl}, \text{центр } \sage{cyl_task[0]}}}
+\end{enumerate}		
+\end{solution}
+
+\mycomment
+
+\begin{tabular}{|l|*{\numberofquestions}{c|}c|}\hline
+	Задача &
+	\ForEachQuestion{\QuestionNumber{#1}\iflastquestion{}{&}} &
+	Всего \\ \hline
+	Баллы &
+	\ForEachQuestion{\GetQuestionProperty{points}{#1}\iflastquestion{}{&}} &
+	\pointssum* \\ \hline
+	Набрано &
+	\ForEachQuestion{\iflastquestion{}{&}} & \\ \hline
+\end{tabular}
+
+\end{document}

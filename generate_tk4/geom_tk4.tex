@@ -1,0 +1,375 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+\usepackage{indentfirst}
+\frenchspacing
+\usepackage{geometry}
+\geometry{left=3cm, right=1.5cm, top=2cm, bottom=1.5cm}
+\usepackage{ifthen}
+\usepackage{sagetex}
+\usepackage{soul}
+%\newcounter{zno} % счетчик номеров задач
+%%% Дополнительная работа с математикой
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools,bm} %
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+\usepackage{etoolbox}
+\usepackage{enumitem}
+\usepackage{lastpage}
+\usepackage{fancyhdr} % Колонтитулы
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.5pt}  % Толщина линейки, отчеркивающей верхний колонтитул
+\renewcommand{\footrulewidth}{0.5pt}
+\lfoot{\textit{В.~Н. Кожухова}}
+\rfoot{%Иванов Иван Иванович
+	\input{\jobname.txt}%
+	}
+%\rhead{Верхний правый}
+\chead{\textbf{ДИТИ НИЯУ МИФИ}, осенний семестр 2017-2018 уч. года}
+%\lhead{Верхний левый}
+%\cfoot{c. \thepage \; из \pageref{LastPage}} % По умолчанию здесь номер страницы
+
+\makeatletter
+\AddEnumerateCounter{\asbuk}{\russian@alph}{щ} % русские буквы в списках
+\makeatother
+
+\usepackage{exsheets}
+\DeclareTranslation{Russian}{exsheets-exercise-name}{Задача}
+\DeclareTranslation{Russian}{exsheets-question-name}{Вопрос}
+\DeclareTranslation{Russian}{exsheets-solution-name}{Ответ}
+\SetupExSheets[points]{name=б.}
+
+%\def\teachers{}
+\newcommand{\mycomment}{\ifdef{\teachers}{\printsolutions}{}}
+
+\begin{document}
+\thispagestyle{empty}
+
+\vspace{-10ex}
+	
+\begin{center}
+\Huge{Аналитическая геометрия}\\
+\vspace{-3ex}
+\section*{Текущий контроль 4}
+\end{center}
+\vspace{-2ex}	
+\textit{Стоимость: \pointssum* б.}
+\begin{flushleft}
+Направление подготовки:  09.03.02 Информационные системы и технологии %03.03.02 Физика %14.03.02 Ядерные физика и технологии 
+
+ФИО студента: %Иванов Иван Иванович
+ \input{\jobname.txt}
+
+Преподаватель: \textit{В.",Н. Кожухова}	
+\end{flushleft}	
+
+\subsection*{Плоскость и прямая в пространстве}
+\begin{sagesilent}
+var('x,y,z')
+M1 = zero_vector(3)
+M2 = M1
+M3 = M1
+a=M1
+b=M1
+p1=zero_vector(4)
+p2=p1
+# если направляющий вектор нулевой, перегенерируем
+while (M1==M2) or (M1==M3) or (M2==M3) or (M1==zero_vector(3)) or  (M2==zero_vector(3)) or (M3==zero_vector(3)):
+  M1 = vector([randint(-5, 5) for i in range(3)])
+  M2 = vector([randint(-3, 3) for i in range(3)])
+  M3 = vector([randint(-7, 7) for i in range(3)])
+while (a==b) or (a==zero_vector(3)) or  (b==zero_vector(3)) or ((M2-M1)==a):
+  a = vector([randint(-5, 4) for i in range(3)])
+  b = vector([randint(-4, 5) for i in range(3)])   
+# составить уравнение плоскости по точке и двум векторам (3 компланарных вектора)
+def Make_Plane(point1,v1,v2):
+    D=matrix([[x-point1[0],y-point1[1],z-point1[2]],[v1[0],v1[1],v1[2]],[v2[0],v2[1],v2[2]]])
+    eqn = D.det()==0
+    return eqn
+def Simp_Plane(P):
+    a=P.left().coefficient(x,1)
+    b=P.left().coefficient(y,1)
+    c=P.left().coefficient(z,1)
+    d=P.left().coefficient(x,0).coefficient(y,0).coefficient(z,0)
+    P1=P.divide_both_sides(gcd((a,b,c,d)))
+    return P1
+P1=Simp_Plane(Make_Plane(M1,M2-M1,M3-M1))
+P2=Simp_Plane(Make_Plane(M1,a,b))
+P3=Simp_Plane(Make_Plane(M1,M2-M1,a))
+a1=randint(-5, 4)
+b1=randint(-4, 5)
+c1=randint(-7, 7)
+pointP=vector([randint(-5, 5) for i in range(3)])
+P=a1*(x-pointP[0])+b1*(y-pointP[1])+c1*(z-pointP[2])==0
+P=Simp_Plane(P)
+L_p1=x==0
+L_p2=L_p1
+while (p1==p2) or (p1==zero_vector(4)) or (p2==zero_vector(4)) or (L_p1.left() == L_p2.left()):
+  p1 = vector([randint(-5, 5) for i in range(4)])
+  p2 = vector([randint(-3, 3) for i in range(4)])
+  L_p1=Simp_Plane(p1[0]*x+p1[1]*y+p1[2]*z+p1[3]==0)
+  L_p2=Simp_Plane(p2[0]*x+p2[1]*y+p2[2]*z+p2[3]==0)
+n=vector([a1,b1,c1])	
+a2=P2.left().coefficient(x,1)
+b2=P2.left().coefficient(y,1)
+c2=P2.left().coefficient(z,1)
+d2=P2.left().coefficient(x,0).coefficient(y,0).coefficient(z,0)
+n2=vector([a2,b2,c2])
+P4=Simp_Plane(Make_Plane(M1,n2,n))
+P5=Simp_Plane(a1*(x-M1[0])+b1*(y-M1[1])+c1*(z-M1[2])==0)
+str_res=[]
+if (P.left().subs(x==M3[0],y==M3[1],z==M3[2])==0):
+   str_res.append(r'')
+else:
+   str_res.append(r'не')
+if (P.left().subs(x==M2[0],y==M2[1],z==M2[2])==0):
+   str_res.append(r'')
+else:
+   str_res.append(r'не')
+if (P4.left().subs(x==M3[0],y==M3[1],z==M3[2])==0):
+   str_res.append('')
+else:
+   str_res.append('не')
+if (P4.left().subs(x==M2[0],y==M2[1],z==M2[2])==0):
+   str_res.append('')
+else:
+   str_res.append('не')
+# вектор нормали
+a4=P4.left().coefficient(x,1)
+b4=P4.left().coefficient(y,1)
+c4=P4.left().coefficient(z,1)
+d4=P4.left().coefficient(x,0).coefficient(y,0).coefficient(z,0)
+d1=P.left().coefficient(x,0).coefficient(y,0).coefficient(z,0)
+n4=vector([a4,b4,c4])
+# делим на +- длину нормального вектора
+if d4>0:
+   P4norm=P4.divide_both_sides(-n4.norm())
+else:
+   P4norm=P4.divide_both_sides(n4.norm())
+if d1>0:
+   Pnorm=P.divide_both_sides(-n.norm())
+else:
+   Pnorm=P.divide_both_sides(n.norm())
+# отклонения точек M2 и M3 от P и P4
+deltaM2P=Pnorm.left().subs(x==M2[0],y==M2[1],z==M2[2])
+deltaM2P4=P4norm.left().subs(x==M2[0],y==M2[1],z==M2[2])
+deltaM3P=Pnorm.left().subs(x==M3[0],y==M3[1],z==M3[2])
+deltaM3P4=P4norm.left().subs(x==M3[0],y==M3[1],z==M3[2])
+if str_res==['не','не','не','не']:   
+     if (sign(deltaM2P)==-sign(deltaM3P)) and (sign(deltaM2P4)==-sign(deltaM3P4)):
+        angM2M3str=r"вертикальном" # вертикальные углы
+     else:
+        if (sign(deltaM2P)==sign(deltaM3P)) and (sign(deltaM2P4)==sign(deltaM3P4)):
+            angM2M3str=r"одном" # один и тот же угол
+        else:
+            angM2M3str=r"смежном" # смежные углы
+else:
+     angM2M3str=r"----"
+sL=(vector([p1[0],p1[1],p1[2]])).cross_product(vector([p2[0],p2[1],p2[2]]))
+ML=solve([L_p1.subs(z==0),L_p2.subs(z==0)],x,y)[0]
+M2L=solve([L_p1.subs(z==1),L_p2.subs(z==1)],x,y)[0]
+pointL=vector([ML[0].right(), ML[1].right(), 0])
+point2L=vector([M2L[0].right(), M2L[1].right(), 1])
+var('t')
+Lparam=(solve([x-pointL[0]==sL[0]*t,y-pointL[1]==sL[1]*t,z==sL[2]*t],x,y,z))[0]
+P1t=P1.subs(x==Lparam[0].right(),y==Lparam[1].right(),z==Lparam[2].right())
+tt=solve(P1t,t)[0].right()
+xLP1=Lparam[0].subs(t=tt)
+yLP1=Lparam[1].subs(t=tt)
+zLP1=Lparam[2].subs(t=tt)
+# запишем наши объекты через sympy
+from sympy import Plane, Point, Point3D, Line3D
+Psp=Plane(Point3D(pointP), normal_vector=n)
+M1sp=Point3D(M1)
+prtemp=Psp.projection(M1sp)
+# проекция M1 на P
+prM1P=vector([prtemp.x._sage_(),prtemp.y._sage_(),prtemp.z._sage_()])
+# наша L через sympy
+Lsp=Line3D(pointL, point2L)
+prtemp=Lsp.projection(M1sp)
+# проекция M1 на L
+prM1L=vector([prtemp.x._sage_(),prtemp.y._sage_(),prtemp.z._sage_()])
+# расстояние от M2 до P2
+P2sp=Plane(Point3D(M1), normal_vector=n2)
+dM2P2=P2sp.distance(Point3D(M2))
+# плоскость через M1 и L
+P6=Simp_Plane(Make_Plane(M1,pointL-M1,sL))
+# проекция L1 на P
+# уравнение L1 в параметрическом виде
+pointL1=vector([M2[0]+a[0],M2[1]+a[1],M2[2]+a[2]])
+M2sp=Point3D(M2)
+pointL1sp=Point3D(pointL1)
+# проекция M2 на P
+prtemp=Psp.projection(M2sp)
+prM2P=vector([prtemp.x._sage_(),prtemp.y._sage_(),prtemp.z._sage_()])
+# проекция pointL1 на P
+prtemp=Psp.projection(pointL1sp)
+prpointL1P=vector([prtemp.x._sage_(),prtemp.y._sage_(),prtemp.z._sage_()])
+prL1Pparam=(solve([x-prM2P[0]==(prpointL1P[0]-prM2P[0])*t,y-prM2P[1]==(prpointL1P[1]-prM2P[1])*t,z-prM2P[2]==(prpointL1P[2]-prM2P[2])*t],x,y,z))[0]
+L2sp=Line3D(Point3D(M2), Point3D(M3))
+# проверка на компланарность (=, пересекаются или параллельны)
+w=Point3D.are_coplanar(Point3D(pointL), Point3D(point2L), Point3D(M2), Point3D(M3))
+sL2=M3-M2
+sLL2=M2-pointL
+if w:
+   if Line3D.is_parallel(Lsp,L2sp):
+      strLL2=r"параллельны"
+      dLL2=Lsp.distance(M2)
+   else:
+      if Line3D.is_similar(Lsp,L2sp):
+         strLL2=r"совпадают"
+         dLL2=0
+      else:
+         strLL2=r"пересекаются"
+         dLL2=0
+else:
+   strLL2=r"скрещиваются"
+   dLL2=abs(sLL2.dot_product(sL.cross_product(sL2)))/(sL.cross_product(sL2)).norm()
+# уравнения биссектрис угла между плоскостями P и P4
+denom=gcd((n.norm(),n4.norm()))
+biss3=Pnorm.left()-P4norm.left()
+biss4=Pnorm.left()+P4norm.left()
+biss3=biss3.canonicalize_radical().mul(denom)
+biss4=biss4.canonicalize_radical().mul(denom)
+biss3=biss3.expand().collect(x).collect(y).collect(z)
+biss4=biss4.expand().collect(x).collect(y).collect(z)
+biss3=biss3.mul(biss3.denominator())
+biss4=biss4.mul(biss4.denominator())
+\end{sagesilent}
+
+\vspace{2ex}	
+
+\begin{question}{1}\label{base}
+Заданы координаты точек $M_1, M_2, M_3$ в пространстве, векторы $\bm a$ и $\bm b$, плоскость $P$ и прямая $L$. 
+\[M_1\sage{M1}, M_2\sage{M2}, M_3\sage{M3}, \bm a=\sage{a}, \bm b=\sage{b},\]
+\[P: \sage{P}, L: \left\{\begin{array}{l}
+\sage{L_p1} \\
+\sage{L_p2}
+\end{array}\right.
+\]
+\begin{enumerate}
+	\item	Составить уравнение плоскости $P_1$, проходящей через точки $M_1, M_2, M_3$.
+	\item	Составить уравнение плоскости $P_2$, проходящей через точку $M_1$, параллельно векторам $\bm a$ и $\bm b$.
+	\item	Составить уравнение плоскости $P_3$, проходящей через точки $M_1, M_2$, параллельно вектору $\bm a$.
+\end{enumerate}
+\end{question}
+\begin{solution}
+$P_1: \sage{P1}$
+
+$P_2: \sage{P2}$
+
+$P_3: \sage{P3}$
+\end{solution}
+
+\begin{question}{1}\label{base2}
+По данным задачи \ref{base}:
+\begin{enumerate}
+	\item Составить уравнение плоскости $P_4$, содержащей точку $M_1$  и перпендикулярной плоскостям $P_2$ и $P$.
+	\item Составить уравнение плоскости $P_5$, содержащей точку $M_1$  и параллельной плоскости $P$.
+	\item Определить, лежат ли точки $M_2, M_3$ на плоскостях $P_4$ и $P$. Если нет, то выяснить лежат ли они в одном, в смежных или в вертикальных двугранных углах, образованных при пересечении плоскостей $P_4$ и $P$.
+\end{enumerate}	
+\end{question}
+\begin{solution}
+$P_4: \sage{P4}$
+
+$P_5: \sage{P5}$
+
+$M_3$ $\sagestr{str_res[0]}$ лежит в плоскости $P$
+
+$M_2$ $\sagestr{str_res[1]}$ лежит в плоскости $P$
+
+$M_3$ $\sagestr{str_res[2]}$ лежит в плоскости $P_4$
+
+$M_2$ $\sagestr{str_res[3]}$ лежит в плоскости $P_4$
+
+$M_2$ и $M_3$ находятся в $\sagestr{angM2M3str}$ углу	
+\end{solution}
+
+\begin{question}{1}
+По данным задачи \ref{base}:
+\begin{enumerate}
+	\item Написать канонические и параметрические уравнения прямой $L$.
+	\item Найти точку пересечения прямой $L$ и плоскости $P_1$.
+	\item Найти проекцию точки $M_1$ на прямую $L$.
+	\item Найти проекцию точки $M_1$ на плоскость $P$.
+\end{enumerate}	
+\end{question}
+\begin{solution}
+	Канонические уравнения: \ensuremath{\displaystyle{\frac{\sage{x-pointL[0]}}{\sage{sL[0]}}=\frac{\sage{y-pointL[1]}}{\sage{sL[1]}}=\frac{z}{\sage{sL[2]}}}}
+	
+	Параметрические уравнения:
+\ensuremath{\displaystyle{\sage{Lparam}}}
+	
+	Точка пересечения прямой и плоскости: \ensuremath{\displaystyle{\sage{xLP1}, \sage{yLP1}, \sage{zLP1}}}
+	
+	Проекция точки $M_1$ на плоскость $P$: \ensuremath{\displaystyle{\sage{prM1P}}}
+	
+	Проекция точки $M_1$ на прямую $L$: \ensuremath{\displaystyle{\sage{prM1L}}}
+\end{solution}
+
+\begin{question}{1}
+	По данным задачи \ref{base}:
+\begin{enumerate}
+\item Написать уравнения прямой $L_1$, проходящей через точку $M_2$   параллельно вектору $\bm a$. Доказать, что прямая $L_1$ параллельна   плоскости $P_2$ и найти расстояние между $L_1$ и $P_2$.
+\item Написать уравнение плоскости $P_6$, проходящей через точку $M_1$ и прямую $L$. 
+\item Найти проекцию прямой $L_1$ на плоскость $P$. Ответ записать в каноническом виде.
+\end{enumerate}
+\end{question}
+\begin{solution}
+Прямая $L_1$: \ensuremath{
+	\displaystyle{
+		\frac{\sage{x-M2[0]}}{\sage{a[0]}}=
+		\frac{\sage{y-M2[1]}}{\sage{a[1]}}=
+			\frac{\sage{z-M2[2]}}{\sage{a[2]}}
+				}}
+
+Расстояние между $L_1$ и $P_2$: \ensuremath{\displaystyle{\sage{dM2P2._sage_()}}}
+
+Уравнение плоскости $P_6$: $\sage{P6}$
+
+Проекция прямой $L_1$ на плоскость $P$: \ensuremath{
+	\displaystyle{
+		\dfrac{\sage{x-prM2P[0]}}{\sage{prpointL1P[0]-prM2P[0]}}=
+		\dfrac{\sage{y-prM2P[1]}}{\sage{prpointL1P[1]-prM2P[1]}}=
+		\dfrac{\sage{z-prM2P[2]}}{\sage{prpointL1P[2]-prM2P[2]}}
+	}}
+	
+\ensuremath{
+	\displaystyle{\sage{prL1Pparam}}}
+\end{solution}
+\begin{question}{1}
+	По данным задач \ref{base} и \ref{base2}:
+	\begin{enumerate}
+\item Выяснить взаимное расположение прямой $L$ и прямой $L_2$, проходящей через точки $M_2$ и $M_3$. Найти расстояние между $L$ и $L_2$. 
+\item Написать уравнение плоскости $P_7$, делящей пополам тот двугранный угол между плоскостями $P$ и $P_4$, в котором расположена точка $M_2$. 	
+	\end{enumerate}
+\end{question}
+\begin{solution}
+Прямые $L$ и $L_2$ \sagestr{strLL2}.
+
+Расстояние между $L$ и $L_2$: \ensuremath{
+	\displaystyle{\sage{dLL2}}}
+
+Биссектрисы углов между $P$ и $P_4$: 
+ 
+\ensuremath{\scriptstyle{\sage{biss3}=0}}
+
+\ensuremath{\scriptstyle{\sage{biss4}=0}}
+\end{solution}
+
+\mycomment
+
+\begin{tabular}{|l|*{\numberofquestions}{c|}c|}\hline
+	Вопрос &
+	\ForEachQuestion{\QuestionNumber{#1}\iflastquestion{}{&}} &
+	Всего \\ \hline
+	Баллы &
+	\ForEachQuestion{\GetQuestionProperty{points}{#1}\iflastquestion{}{&}} &
+	\pointssum* \\ \hline
+	Набрано &
+	\ForEachQuestion{\iflastquestion{}{&}} & \\ \hline
+\end{tabular}
+
+\end{document}

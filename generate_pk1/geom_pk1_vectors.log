@@ -1,0 +1,3798 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.23)  16 OCT 2017 18:28
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**geom_pk1_vectors.tex
+(./geom_pk1_vectors.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+
+! LaTeX Error: Environment question undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{question}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 	–
+      †–∞–∑–ª–æ–∂–∏—Ç—å –≤–µ–∫—Ç–æ—Ä $\bm x$ –ø–æ –≤–µ–∫—Ç–æ—Ä–∞–º $\bm p, \...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no † in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∑ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∂ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.2 	–†–∞–∑–ª–æ–∂–∏—Ç—å –≤–µ–∫—Ç–æ—Ä $\bm
+                                          x$ –ø–æ –≤–µ–∫—Ç–æ—Ä–∞–º $\bm p, \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no º in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.2 ...–∫—Ç–æ—Ä $\bm x$ –ø–æ –≤–µ–∫—Ç–æ—Ä–∞–º $\bm
+                                                   p, \bm q, \bm r$ : $\bm x...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.2 ...Ä $\bm x$ –ø–æ –≤–µ–∫—Ç–æ—Ä–∞–º $\bm p, \bm
+                                                   q, \bm r$ : $\bm x = \alp...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.2 ...x$ –ø–æ –≤–µ–∫—Ç–æ—Ä–∞–º $\bm p, \bm q, \bm
+                                                   r$ : $\bm x = \alpha\bm p...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no : in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.2 ...–µ–∫—Ç–æ—Ä–∞–º $\bm p, \bm q, \bm r$ : $\bm
+                                                   x = \alpha\bm p + \beta\b...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.2 ... $\bm p, \bm q, \bm r$ : $\bm x = \alpha\bm
+                                                   p + \beta\bm q + \gamma\b...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.2 ...q, \bm r$ : $\bm x = \alpha\bm p + \beta\bm
+                                                   q + \gamma\bm r$, –µ—Å–ª–∏
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.2 ...bm x = \alpha\bm p + \beta\bm q + \gamma\bm
+                                                   r$, –µ—Å–ª–∏
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.3 	$\bm
+         {x}=\sage{x11}$, $\bm{p}=\sage{p11}$, $\bm{q}=\sage{q11}$, $\bm{r}=...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.3 	$\bm{x}=\sage
+                  {x11}$, $\bm{p}=\sage{p11}$, $\bm{q}=\sage{q11}$, $\bm{r}=...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.3 	$\bm{x}=\sage{x11}$, $\bm
+                              {p}=\sage{p11}$, $\bm{q}=\sage{q11}$, $\bm{r}=...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.3 	$\bm{x}=\sage{x11}$, $\bm{p}=\sage
+                                       {p11}$, $\bm{q}=\sage{q11}$, $\bm{r}=...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.3 ...m{x}=\sage{x11}$, $\bm{p}=\sage{p11}$, $\bm
+                                                  {q}=\sage{q11}$, $\bm{r}=\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.3 ...e{x11}$, $\bm{p}=\sage{p11}$, $\bm{q}=\sage
+                                                  {q11}$, $\bm{r}=\sage{r11}$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.3 ...m{p}=\sage{p11}$, $\bm{q}=\sage{q11}$, $\bm
+                                                  {r}=\sage{r11}$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.3 ...e{p11}$, $\bm{q}=\sage{q11}$, $\bm{r}=\sage
+                                                  {r11}$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{question}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \end{question}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment solution undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \begin{solution}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+<argument> \alpha = \sage 
+                          {coord11[0]}, \beta = \sage {coord11[1]}, \gamma =...
+l.6 ...ge{coord11[1]}, \gamma = \sage{coord11[2]}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...= \sage {coord11[0]}, \beta = \sage 
+                                                  {coord11[1]}, \gamma = \sa...
+l.6 ...ge{coord11[1]}, \gamma = \sage{coord11[2]}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ... \sage {coord11[1]}, \gamma = \sage 
+                                                  {coord11[2]}
+l.6 ...ge{coord11[1]}, \gamma = \sage{coord11[2]}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{solution}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \end{solution}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment question undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \begin{question}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no π in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no â in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ¥ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ö in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.9 ...—Ä–æ–µ–Ω–Ω–æ–≥–æ –Ω–∞ –≤–µ–∫—Ç–æ—Ä–∞—Ö $\bm
+                                                   a$ –∏ $\bm b$, –µ—Å–ª–∏ $...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.9 ...æ–≥–æ –Ω–∞ –≤–µ–∫—Ç–æ—Ä–∞—Ö $\bm a$ –∏ $\bm
+                                                   b$, –µ—Å–ª–∏ $\bm a=\sage...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.9 ...Ç–æ—Ä–∞—Ö $\bm a$ –∏ $\bm b$, –µ—Å–ª–∏ $\bm
+                                                   a=\sage{a12print}$, $\bm ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.9 ...Ö $\bm a$ –∏ $\bm b$, –µ—Å–ª–∏ $\bm a=\sage
+                                                  {a12print}$, $\bm b=\sage{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.9 ... b$, –µ—Å–ª–∏ $\bm a=\sage{a12print}$, $\bm
+                                                   b=\sage{b12print}$, –∞ –≤...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.9 ...Å–ª–∏ $\bm a=\sage{a12print}$, $\bm b=\sage
+                                                  {b12print}$, –∞ –≤–µ–∫—Ç–æ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ã in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.9 ... b=\sage{b12print}$, –∞ –≤–µ–∫—Ç–æ—Ä—ã $\bm
+                                                   u$ –∏ $\bm v$ –∏–º–µ—é—Ç ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.9 ...2print}$, –∞ –≤–µ–∫—Ç–æ—Ä—ã $\bm u$ –∏ $\bm
+                                                   v$ –∏–º–µ—é—Ç –∫–æ–æ—Ä–¥–...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ¥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ã in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.9 ...\bm v$ –∏–º–µ—é—Ç –∫–æ–æ—Ä–¥–∏–Ω–∞—Ç—ã $\bm
+                                                   u=\sage{u12}$, $\bm v=\sa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.9 ...∏–º–µ—é—Ç –∫–æ–æ—Ä–¥–∏–Ω–∞—Ç—ã $\bm u=\sage
+                                                  {u12}$, $\bm v=\sage{v12}$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.9 ...–æ–æ—Ä–¥–∏–Ω–∞—Ç—ã $\bm u=\sage{u12}$, $\bm
+                                                   v=\sage{v12}$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.9 ...–∏–Ω–∞—Ç—ã $\bm u=\sage{u12}$, $\bm v=\sage
+                                                  {v12}$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{question}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \end{question}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment solution undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \begin{solution}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.12 $S=\sage
+             {S12}$, $P=\sage{P12}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+! Undefined control sequence.
+l.12 $S=\sage{S12}$, $P=\sage
+                             {P12}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{solution}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{solution}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 2--14
+[]
+ []
+
+
+Overfull \hbox (5.71527pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 x$
+ []
+
+
+Overfull \hbox (23.53235pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 p; q; r$
+ []
+
+
+Overfull \hbox (16.27078pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (19.24309pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 p \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (18.78473pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 ^^Lq \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (10.52222pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 ^^Mr$
+ []
+
+
+Overfull \hbox (16.27078pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (15.7153pt too wide) in paragraph at lines 2--14
+[]$
+ []
+
+
+Overfull \hbox (15.58676pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 p \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (15.03128pt too wide) in paragraph at lines 2--14
+[]$
+ []
+
+
+Overfull \hbox (15.37842pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 q \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (14.82294pt too wide) in paragraph at lines 2--14
+[]$
+ []
+
+
+Overfull \hbox (15.34488pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 r \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (14.7894pt too wide) in paragraph at lines 2--14
+[]$
+ []
+
+
+Overfull \hbox (16.98955pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10  \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (65.75581pt too wide) in paragraph at lines 2--14
+[]\OML/cmm/m/it/10 ; ^^L \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (65.30464pt too wide) in paragraph at lines 2--14
+[]\OML/cmm/m/it/10 ; ^^M \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (44.57187pt too wide) in paragraph at lines 2--14
+[]$
+ []
+
+
+Overfull \hbox (5.28589pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 a$
+ []
+
+
+Overfull \hbox (4.29166pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 b$
+ []
+
+
+Overfull \hbox (15.8414pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (38.16513pt too wide) in paragraph at lines 2--14
+[]$
+ []
+
+
+Overfull \hbox (14.84717pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 b \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (37.1709pt too wide) in paragraph at lines 2--14
+[]$
+ []
+
+
+Overfull \hbox (5.72458pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 u$
+ []
+
+
+Overfull \hbox (5.20601pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 v$
+ []
+
+
+Overfull \hbox (16.28009pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 u \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (15.72461pt too wide) in paragraph at lines 2--14
+[]$
+ []
+
+
+Overfull \hbox (15.76152pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 v \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (15.20604pt too wide) in paragraph at lines 2--14
+[]$
+ []
+
+
+Overfull \hbox (17.26382pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 S \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (16.70834pt too wide) in paragraph at lines 2--14
+[]$
+ []
+
+
+Overfull \hbox (18.36455pt too wide) in paragraph at lines 2--14
+\OML/cmm/m/it/10 P \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (17.80907pt too wide) in paragraph at lines 2--14
+[]$
+ []
+
+
+! LaTeX Error: Environment question undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \begin{question}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 –
+      ù–∞–π—Ç–∏ —É–≥–æ–ª –º–µ–∂–¥—É –¥–∏–∞–≥–æ–Ω–∞–ª—è–º–∏ —Ç—Ä–µ—É–≥–æ–ª—å–...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no π in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∂ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ¥ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ¥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ö in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.16 ...Ä–æ–µ–Ω–Ω–æ–≥–æ –Ω–∞ –≤–µ–∫—Ç–æ—Ä–∞—Ö $\bm
+                                                   a$ –∏ $\bm b$, –µ—Å–ª–∏ $...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.16 ...–≥–æ –Ω–∞ –≤–µ–∫—Ç–æ—Ä–∞—Ö $\bm a$ –∏ $\bm
+                                                   b$, –µ—Å–ª–∏ $\bm a=\sage...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.16 ...–æ—Ä–∞—Ö $\bm a$ –∏ $\bm b$, –µ—Å–ª–∏ $\bm
+                                                   a=\sage{a13print}$, $\bm ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.16 ... $\bm a$ –∏ $\bm b$, –µ—Å–ª–∏ $\bm a=\sage
+                                                  {a13print}$, $\bm b=\sage{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.16 ...b$, –µ—Å–ª–∏ $\bm a=\sage{a13print}$, $\bm
+                                                   b=\sage{b13print}$, –∞ –ø...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.16 ...–ª–∏ $\bm a=\sage{a13print}$, $\bm b=\sage
+                                                  {b13print}$, –∞ –ø—Ä–æ –≤–...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ã in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.16 ...{b13print}$, –∞ –ø—Ä–æ –≤–µ–∫—Ç–æ—Ä—ã $\bm
+                                                   m$ –∏ $\bm n$ –∏–∑–≤–µ—Å—...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.16 ..., –∞ –ø—Ä–æ –≤–µ–∫—Ç–æ—Ä—ã $\bm m$ –∏ $\bm
+                                                   n$ –∏–∑–≤–µ—Å—Ç–Ω–æ, —á—Ç...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∑ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+! Undefined control sequence.
+l.16 ... –∏ $\bm n$ –∏–∑–≤–µ—Å—Ç–Ω–æ, —á—Ç–æ $|\bm
+                                                   m|=\sage{normm13}$, $|\bm...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.16 ...n$ –∏–∑–≤–µ—Å—Ç–Ω–æ, —á—Ç–æ $|\bm m|=\sage
+                                                  {normm13}$, $|\bm n|=\sage...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+! Undefined control sequence.
+l.16 ...–æ, —á—Ç–æ $|\bm m|=\sage{normm13}$, $|\bm
+                                                   n|=\sage{normn13}$, $\ang...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.16 ...æ $|\bm m|=\sage{normm13}$, $|\bm n|=\sage
+                                                  {normn13}$, $\angle(\bm m,...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+! Undefined control sequence.
+l.16 ...3}$, $|\bm n|=\sage{normn13}$, $\angle(\bm
+                                                   m, \bm n)=\sage{ang13}^\c...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.16 ...\bm n|=\sage{normn13}$, $\angle(\bm m, \bm
+                                                   n)=\sage{ang13}^\circ$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.16 ...age{normn13}$, $\angle(\bm m, \bm n)=\sage
+                                                  {ang13}^\circ$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{question}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \end{question}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment solution undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \begin{solution}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.19 $\cos\angle(\bm
+                     d_1, \bm d_2)=\sage{d1d2ang13}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.19 $\cos\angle(\bm d_1, \bm
+                              d_2)=\sage{d1d2ang13}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.19 $\cos\angle(\bm d_1, \bm d_2)=\sage
+                                        {d1d2ang13}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{solution}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \end{solution}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment question undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \begin{question}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+! Undefined control sequence.
+l.22 –î–∞–Ω—ã —Ç–æ—á–∫–∏ $A\sage
+                                {A14}$, $B\sage{B14}$, $C\sage{C14}$. –ù–∞–π...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+! Undefined control sequence.
+l.22 –î–∞–Ω—ã —Ç–æ—á–∫–∏ $A\sage{A14}$, $B\sage
+                                               {B14}$, $C\sage{C14}$. –ù–∞–π...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+! Undefined control sequence.
+l.22 ...–∫–∏ $A\sage{A14}$, $B\sage{B14}$, $C\sage
+                                                  {C14}$. –ù–∞–π—Ç–∏ –¥–ª–∏–...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no . in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no π in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ¥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.22 ... –ù–∞–π—Ç–∏ –¥–ª–∏–Ω—É –≤–µ–∫—Ç–æ—Ä–∞ $\bm
+                                                   p=\sage{c14}[\sagestr{vec...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.22 ...Ç–∏ –¥–ª–∏–Ω—É –≤–µ–∫—Ç–æ—Ä–∞ $\bm p=\sage
+                                                  {c14}[\sagestr{vec114}, \s...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.22 ... –≤–µ–∫—Ç–æ—Ä–∞ $\bm p=\sage{c14}[\sagestr
+                                                  {vec114}, \sagestr{vec214}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.22 ...bm p=\sage{c14}[\sagestr{vec114}, \sagestr
+                                                  {vec214}]$ –∏ –µ–≥–æ –Ω–∞–...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no â in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{question}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \end{question}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment solution undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 \begin{solution}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.25 $|\bm
+           p|=\sage{p14norm}$, $\bm e_p=\sage{p14cos}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.25 $|\bm p|=\sage
+                   {p14norm}$, $\bm e_p=\sage{p14cos}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.25 $|\bm p|=\sage{p14norm}$, $\bm
+                                    e_p=\sage{p14cos}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.25 $|\bm p|=\sage{p14norm}$, $\bm e_p=\sage
+                                             {p14cos}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{solution}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \end{solution}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment comment undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \begin{comment}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment question undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \begin{question}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ã in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.29 –î–∞–Ω—ã –≤–µ–∫—Ç–æ—Ä—ã $\bm
+                                  a$ –∏ $\bm b$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.29 –î–∞–Ω—ã –≤–µ–∫—Ç–æ—Ä—ã $\bm a$ –∏ $\bm
+                                             b$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 16--30
+[]
+ []
+
+
+Overfull \hbox (5.28589pt too wide) in paragraph at lines 16--30
+\OML/cmm/m/it/10 a$
+ []
+
+
+Overfull \hbox (4.29166pt too wide) in paragraph at lines 16--30
+\OML/cmm/m/it/10 b$
+ []
+
+
+Overfull \hbox (15.8414pt too wide) in paragraph at lines 16--30
+\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (38.16513pt too wide) in paragraph at lines 16--30
+[]$
+ []
+
+
+Overfull \hbox (14.84717pt too wide) in paragraph at lines 16--30
+\OML/cmm/m/it/10 b \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (37.1709pt too wide) in paragraph at lines 16--30
+[]$
+ []
+
+
+Overfull \hbox (8.78014pt too wide) in paragraph at lines 16--30
+\OML/cmm/m/it/10 m$
+ []
+
+
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 16--30
+\OML/cmm/m/it/10 n$
+ []
+
+
+Overfull \hbox (24.89122pt too wide) in paragraph at lines 16--30
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 m\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (43.19925pt too wide) in paragraph at lines 16--30
+[]$
+ []
+
+
+Overfull \hbox (22.11343pt too wide) in paragraph at lines 16--30
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 n\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (40.42146pt too wide) in paragraph at lines 16--30
+[]$
+ []
+
+
+Overfull \hbox (43.93365pt too wide) in paragraph at lines 16--30
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 m; n\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (31.01396pt too wide) in paragraph at lines 16--30
+[][]$
+ []
+
+
+Overfull \hbox (63.58868pt too wide) in paragraph at lines 16--30
+[] []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 d[]; d[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (46.82649pt too wide) in paragraph at lines 16--30
+[]$
+ []
+
+
+Overfull \hbox (25.00006pt too wide) in paragraph at lines 16--30
+\OML/cmm/m/it/10 A[]$
+ []
+
+
+Overfull \hbox (26.17365pt too wide) in paragraph at lines 16--30
+\OML/cmm/m/it/10 B[]$
+ []
+
+
+Overfull \hbox (25.725pt too wide) in paragraph at lines 16--30
+\OML/cmm/m/it/10 C[]$
+ []
+
+
+Overfull \hbox (15.58676pt too wide) in paragraph at lines 16--30
+\OML/cmm/m/it/10 p \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (82.70734pt too wide) in paragraph at lines 16--30
+[]\OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 ]$
+ []
+
+
+Overfull \hbox (21.14233pt too wide) in paragraph at lines 16--30
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 p\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (39.45036pt too wide) in paragraph at lines 16--30
+[]$
+ []
+
+
+Overfull \hbox (19.83412pt too wide) in paragraph at lines 16--30
+\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (28.89357pt too wide) in paragraph at lines 16--30
+[]$
+ []
+
+
+Overfull \hbox (5.28589pt too wide) in paragraph at lines 16--30
+\OML/cmm/m/it/10 a$
+ []
+
+
+Overfull \hbox (4.29166pt too wide) in paragraph at lines 16--30
+\OML/cmm/m/it/10 b$ 
+ []
+
+! Undefined control sequence.
+l.30 \[\bm
+          {a}=\sage{a1}, \bm{b}=\sage{b1}\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.30 \[\bm{a}=\sage
+                   {a1}, \bm{b}=\sage{b1}\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.30 \[\bm{a}=\sage{a1}, \bm
+                            {b}=\sage{b1}\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.30 \[\bm{a}=\sage{a1}, \bm{b}=\sage
+                                     {b1}\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (60.26598pt too wide) detected at line 30
+\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 ; b \OT1/cmr/m/n/10 = [
+]
+ []
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no π in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ¥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.31 –ù–∞–π–¥–∏—Ç–µ –≤–µ–∫—Ç–æ—Ä $\bm
+                                      c$, –ø–µ—Ä–ø–µ–Ω–¥–∏–∫—É–ª—è—Ä–Ω—ã–π –...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ¥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no π in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no º in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.31 ...–¥–∏–∫—É–ª—è—Ä–Ω—ã–π –≤–µ–∫—Ç–æ—Ä–∞–º $\bm
+                                                   a$ –∏ $\bm b$, –µ—Å–ª–∏ –...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.31 ...è—Ä–Ω—ã–π –≤–µ–∫—Ç–æ—Ä–∞–º $\bm a$ –∏ $\bm
+                                                   b$, –µ—Å–ª–∏ –ø—Ä–æ–µ–∫—Ü...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ü in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.31 ...Å–ª–∏ –ø—Ä–æ–µ–∫—Ü–∏—è –≤–µ–∫—Ç–æ—Ä–∞ $\bm
+                                                   c$ –Ω–∞ –æ—Å—å \textit{\s...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no å in font nullfont!
+! Undefined control sequence.
+<recently read> \sagestr 
+                         
+l.31 ... $\bm c$ –Ω–∞ –æ—Å—å \textit{\sagestr{os}}
+                                                   —Ä–∞–≤–Ω–∞ $\sage{prc}$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+! Undefined control sequence.
+<recently read> \sage 
+                      
+l.31 ...—å \textit{\sagestr{os}} —Ä–∞–≤–Ω–∞ $\sage
+                                                  {prc}$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{question}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 \end{question}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment solution undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \begin{solution}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.34 $\bm
+          c = \sage{s1[0]}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.34 $\bm c = \sage
+                   {s1[0]}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{solution}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \end{solution}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (4.32756pt too wide) in paragraph at lines 30--36
+  $\OML/cmm/m/it/10 c$
+ []
+
+
+Overfull \hbox (5.28589pt too wide) in paragraph at lines 30--36
+\OML/cmm/m/it/10 a$
+ []
+
+
+Overfull \hbox (4.29166pt too wide) in paragraph at lines 30--36
+\OML/cmm/m/it/10 b$
+ []
+
+
+Overfull \hbox (4.32756pt too wide) in paragraph at lines 30--36
+\OML/cmm/m/it/10 c$
+ []
+
+
+Overfull \hbox (9.19995pt too wide) in paragraph at lines 30--36
+\OT1/cmr/m/it/10 os
+ []
+
+
+Overfull \hbox (14.14818pt too wide) in paragraph at lines 30--36
+[]$
+ []
+
+
+Overfull \hbox (14.88307pt too wide) in paragraph at lines 30--36
+\OML/cmm/m/it/10 c \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (20.2431pt too wide) in paragraph at lines 30--36
+[]$
+ []
+
+
+! LaTeX Error: Environment question undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \begin{question}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 –
+      í—ã—á–∏—Å–ª–∏—Ç—å –ø–ª–æ—â–∞–¥—å –ø–∞—Ä–∞–ª–ª–µ–ª–æ–≥—Ä–∞–º–º–∞, –ø–æ—...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no í in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no â in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ¥ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≥ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ö in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.40 ...Ä–æ–µ–Ω–Ω–æ–≥–æ –Ω–∞ –≤–µ–∫—Ç–æ—Ä–∞—Ö $\bm
+                                                   u$ –∏ $\bm v$, –µ—Å–ª–∏:
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.40 ...–≥–æ –Ω–∞ –≤–µ–∫—Ç–æ—Ä–∞—Ö $\bm u$ –∏ $\bm
+                                                   v$, –µ—Å–ª–∏:
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no : in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.41 $\bm
+         {u}=\sage{u}, \bm{v}=\sage{v}$, –ø—Ä–∏ —ç—Ç–æ–º –æ –≤–µ–∫—Ç–æ—Ä–∞—Ö...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41 $\bm{u}=\sage
+                  {u}, \bm{v}=\sage{v}$, –ø—Ä–∏ —ç—Ç–æ–º –æ –≤–µ–∫—Ç–æ—Ä–∞—Ö...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41 $\bm{u}=\sage{u}, \bm
+                          {v}=\sage{v}$, –ø—Ä–∏ —ç—Ç–æ–º –æ –≤–µ–∫—Ç–æ—Ä–∞—Ö...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41 $\bm{u}=\sage{u}, \bm{v}=\sage
+                                   {v}$, –ø—Ä–∏ —ç—Ç–æ–º –æ –≤–µ–∫—Ç–æ—Ä–∞—Ö...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ö in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.41 ..., –ø—Ä–∏ —ç—Ç–æ–º –æ –≤–µ–∫—Ç–æ—Ä–∞—Ö $\bm
+                                                   a$ –∏ $\bm b$ –∏–∑–≤–µ—Å—...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.41 ...—Ç–æ–º –æ –≤–µ–∫—Ç–æ—Ä–∞—Ö $\bm a$ –∏ $\bm
+                                                   b$ –∏–∑–≤–µ—Å—Ç–Ω–æ, —á—Ç–æ:
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∑ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no : in font nullfont!
+! Undefined control sequence.
+l.42 $|\bm
+           a|=\sage{normA}, |\bm b| = \sage{normB}$,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.42 $|\bm a|=\sage
+                   {normA}, |\bm b| = \sage{normB}$,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.42 $|\bm a|=\sage{normA}, |\bm
+                                 b| = \sage{normB}$,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.42 $|\bm a|=\sage{normA}, |\bm b| = \sage
+                                           {normB}$,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+! Undefined control sequence.
+l.43 $\angle\left(\bm
+                      a, \bm b\right)=\sage{ang}^\circ$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.43 $\angle\left(\bm a, \bm
+                             b\right)=\sage{ang}^\circ$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.43 $\angle\left(\bm a, \bm b\right)=\sage
+                                           {ang}^\circ$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{question}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 \end{question}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment solution undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 \begin{solution}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+<argument> \displaystyle {S = \sage 
+                                    {latex(Sparal)}}
+l.46 ...h{\displaystyle{S = \sage{latex(Sparal)}}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{solution}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 \end{solution}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 40--48
+[]
+ []
+
+
+Overfull \hbox (5.72458pt too wide) in paragraph at lines 40--48
+\OML/cmm/m/it/10 u$
+ []
+
+
+Overfull \hbox (5.20601pt too wide) in paragraph at lines 40--48
+\OML/cmm/m/it/10 v$
+ []
+
+
+Overfull \hbox (16.28009pt too wide) in paragraph at lines 40--48
+\OML/cmm/m/it/10 u \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (25.93051pt too wide) in paragraph at lines 40--48
+\OML/cmm/m/it/10 u; v \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (5.20601pt too wide) in paragraph at lines 40--48
+\OML/cmm/m/it/10 v$
+ []
+
+
+Overfull \hbox (5.28589pt too wide) in paragraph at lines 40--48
+\OML/cmm/m/it/10 a$
+ []
+
+
+Overfull \hbox (4.29166pt too wide) in paragraph at lines 40--48
+\OML/cmm/m/it/10 b$
+ []
+
+
+Overfull \hbox (21.39697pt too wide) in paragraph at lines 40--48
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 a\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (56.76625pt too wide) in paragraph at lines 40--48
+[]\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 b\OMS/cmsy/m/n/10 j \OT
+1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (32.50589pt too wide) in paragraph at lines 40--48
+[]$
+ []
+
+
+Overfull \hbox (40.39534pt too wide) in paragraph at lines 40--48
+[] [] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (21.01393pt too wide) in paragraph at lines 40--48
+[][]$
+ []
+
+
+Overfull \hbox (80.54973pt too wide) in paragraph at lines 40--48
+[]$
+ []
+
+
+! LaTeX Error: Environment question undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 \begin{question}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 –
+      í—ã—á–∏—Å–ª–∏—Ç—å —É–≥–æ–ª –º–µ–∂–¥—É –¥–∏–∞–≥–æ–Ω–∞–ª—è–º–∏ –ø–∞—Ä–∞–...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no í in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∂ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ¥ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ¥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≥ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ö in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.50 ...Ä–æ–µ–Ω–Ω–æ–≥–æ –Ω–∞ –≤–µ–∫—Ç–æ—Ä–∞—Ö $\bm
+                                                   u$ –∏ $\bm v$, –µ—Å–ª–∏:
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.50 ...–≥–æ –Ω–∞ –≤–µ–∫—Ç–æ—Ä–∞—Ö $\bm u$ –∏ $\bm
+                                                   v$, –µ—Å–ª–∏:
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no : in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.51 $\bm
+         {u}=\sage{u}, \bm{v}=\sage{v}$, –ø—Ä–∏ —ç—Ç–æ–º –æ –≤–µ–∫—Ç–æ—Ä–∞—Ö...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.51 $\bm{u}=\sage
+                  {u}, \bm{v}=\sage{v}$, –ø—Ä–∏ —ç—Ç–æ–º –æ –≤–µ–∫—Ç–æ—Ä–∞—Ö...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.51 $\bm{u}=\sage{u}, \bm
+                          {v}=\sage{v}$, –ø—Ä–∏ —ç—Ç–æ–º –æ –≤–µ–∫—Ç–æ—Ä–∞—Ö...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.51 $\bm{u}=\sage{u}, \bm{v}=\sage
+                                   {v}$, –ø—Ä–∏ —ç—Ç–æ–º –æ –≤–µ–∫—Ç–æ—Ä–∞—Ö...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ö in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.51 ..., –ø—Ä–∏ —ç—Ç–æ–º –æ –≤–µ–∫—Ç–æ—Ä–∞—Ö $\bm
+                                                   a$ –∏ $\bm b$ –∏–∑–≤–µ—Å—...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.51 ...—Ç–æ–º –æ –≤–µ–∫—Ç–æ—Ä–∞—Ö $\bm a$ –∏ $\bm
+                                                   b$ –∏–∑–≤–µ—Å—Ç–Ω–æ, —á—Ç–æ:
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∑ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no : in font nullfont!
+! Undefined control sequence.
+l.52 $|\bm
+           a|=\sage{normA}, |\bm b| = \sage{normB}$,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.52 $|\bm a|=\sage
+                   {normA}, |\bm b| = \sage{normB}$,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.52 $|\bm a|=\sage{normA}, |\bm
+                                 b| = \sage{normB}$,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.52 $|\bm a|=\sage{normA}, |\bm b| = \sage
+                                           {normB}$,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+! Undefined control sequence.
+l.53 $\angle\left(\bm
+                      a, \bm b\right)=\sage{ang}^\circ$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.53 $\angle\left(\bm a, \bm
+                             b\right)=\sage{ang}^\circ$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.53 $\angle\left(\bm a, \bm b\right)=\sage
+                                           {ang}^\circ$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{question}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 \end{question}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment solution undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 \begin{solution}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+<argument> \displaystyle {\cos \angle \left (\bm 
+                                                 {d_1}, \bm {d_2}\right )=\s...
+l.56 ...\bm{d_1}, \bm{d_2}\right)=\sage{angd1d2}}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ... {\cos \angle \left (\bm {d_1}, \bm 
+                                                  {d_2}\right )=\sage {angd1...
+l.56 ...\bm{d_1}, \bm{d_2}\right)=\sage{angd1d2}}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...(\bm {d_1}, \bm {d_2}\right )=\sage 
+                                                  {angd1d2}}
+l.56 ...\bm{d_1}, \bm{d_2}\right)=\sage{angd1d2}}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{solution}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 \end{solution}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 50--58
+[]
+ []
+
+
+Overfull \hbox (5.72458pt too wide) in paragraph at lines 50--58
+\OML/cmm/m/it/10 u$
+ []
+
+
+Overfull \hbox (5.20601pt too wide) in paragraph at lines 50--58
+\OML/cmm/m/it/10 v$
+ []
+
+
+Overfull \hbox (16.28009pt too wide) in paragraph at lines 50--58
+\OML/cmm/m/it/10 u \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (25.93051pt too wide) in paragraph at lines 50--58
+\OML/cmm/m/it/10 u; v \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (5.20601pt too wide) in paragraph at lines 50--58
+\OML/cmm/m/it/10 v$
+ []
+
+
+Overfull \hbox (5.28589pt too wide) in paragraph at lines 50--58
+\OML/cmm/m/it/10 a$
+ []
+
+
+Overfull \hbox (4.29166pt too wide) in paragraph at lines 50--58
+\OML/cmm/m/it/10 b$
+ []
+
+
+Overfull \hbox (21.39697pt too wide) in paragraph at lines 50--58
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 a\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (56.76625pt too wide) in paragraph at lines 50--58
+[]\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 b\OMS/cmsy/m/n/10 j \OT
+1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (32.50589pt too wide) in paragraph at lines 50--58
+[]$
+ []
+
+
+Overfull \hbox (40.39534pt too wide) in paragraph at lines 50--58
+[] [] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (21.01393pt too wide) in paragraph at lines 50--58
+[][]$
+ []
+
+
+Overfull \hbox (104.85948pt too wide) in paragraph at lines 50--58
+[]$
+ []
+
+
+! LaTeX Error: Environment question undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 \begin{question}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 –
+      ü—Ä–æ–≤–µ—Ä–∏—Ç—å, –∫–æ–º–ø–ª–∞–Ω–∞—Ä–Ω—ã –ª–∏ –≤–µ–∫—Ç–æ—Ä—ã $\bm a$,...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ü in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ã in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.60 ...º–ø–ª–∞–Ω–∞—Ä–Ω—ã –ª–∏ –≤–µ–∫—Ç–æ—Ä—ã $\bm
+                                                   a$, $\bm b$ –∏ $\bm c$:
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.60 ...–∞—Ä–Ω—ã –ª–∏ –≤–µ–∫—Ç–æ—Ä—ã $\bm a$, $\bm
+                                                   b$ –∏ $\bm c$:
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.60 ...–∏ –≤–µ–∫—Ç–æ—Ä—ã $\bm a$, $\bm b$ –∏ $\bm
+                                                   c$:
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 60--61
+[]
+ []
+
+
+Overfull \hbox (5.28589pt too wide) in paragraph at lines 60--61
+\OML/cmm/m/it/10 a$
+ []
+
+
+Overfull \hbox (4.29166pt too wide) in paragraph at lines 60--61
+\OML/cmm/m/it/10 b$
+ []
+
+
+Overfull \hbox (4.32756pt too wide) in paragraph at lines 60--61
+\OML/cmm/m/it/10 c$ 
+ []
+
+! Undefined control sequence.
+l.61 \[\bm
+          {a}=\sage{a4}, \bm{b}=\sage{b4}, \bm{c}=\sage{c4}\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.61 \[\bm{a}=\sage
+                   {a4}, \bm{b}=\sage{b4}, \bm{c}=\sage{c4}\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.61 \[\bm{a}=\sage{a4}, \bm
+                            {b}=\sage{b4}, \bm{c}=\sage{c4}\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.61 \[\bm{a}=\sage{a4}, \bm{b}=\sage
+                                     {b4}, \bm{c}=\sage{c4}\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.61 \[\bm{a}=\sage{a4}, \bm{b}=\sage{b4}, \bm
+                                              {c}=\sage{c4}\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.61 ...=\sage{a4}, \bm{b}=\sage{b4}, \bm{c}=\sage
+                                                  {c4}\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (91.69875pt too wide) detected at line 61
+\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 ; b \OT1/cmr/m/n/10 = [
+]\OML/cmm/m/it/10 ; c \OT1/cmr/m/n/10 = []
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{question}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \end{question}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment solution undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 \begin{solution}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no í in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ã in font nullfont!
+! Undefined control sequence.
+l.64 –í–µ–∫—Ç–æ—Ä—ã \sagestr
+                            {compl}, \ensuremath{\bm{abc} = \sage{abc}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no , in font nullfont!
+! Undefined control sequence.
+<argument> \bm 
+               {abc} = \sage {abc}
+l.64 ...compl}, \ensuremath{\bm{abc} = \sage{abc}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \bm {abc} = \sage 
+                             {abc}
+l.64 ...compl}, \ensuremath{\bm{abc} = \sage{abc}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{solution}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 \end{solution}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (24.46062pt too wide) in paragraph at lines 61--66
+    $[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (13.9051pt too wide) in paragraph at lines 61--66
+[]$
+ []
+
+
+! LaTeX Error: Environment question undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 \begin{question}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 –
+      í—ã—á–∏—Å–ª–∏—Ç—å –æ–±—ä–µ–º —Ç–µ—Ç—Ä–∞—ç–¥—Ä–∞ —Å –≤–µ—Ä—à–∏–Ω–∞–º–∏ ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no í in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ± in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ¥ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no á in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∫ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ö in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no â in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∑ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≥ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 68--69
+[]
+ []
+
+
+Overfull \hbox (61.27782pt too wide) in paragraph at lines 68--69
+\OML/cmm/m/it/10 A[]; A[]; A[]; A[]$
+ []
+
+
+Overfull \hbox (11.98615pt too wide) in paragraph at lines 68--69
+\OML/cmm/m/it/10 A[]$
+ []
+
+
+Overfull \hbox (35.95844pt too wide) in paragraph at lines 68--69
+\OML/cmm/m/it/10 A[]A[]A[]$ 
+ []
+
+! Undefined control sequence.
+l.69 \[A_1\sage
+               {A1}, A_2\sage{A2}, A_3\sage{A3}, A_4\sage{A4}\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.69 \[A_1\sage{A1}, A_2\sage
+                             {A2}, A_3\sage{A3}, A_4\sage{A4}\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.69 \[A_1\sage{A1}, A_2\sage{A2}, A_3\sage
+                                           {A3}, A_4\sage{A4}\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.69 ...{A1}, A_2\sage{A2}, A_3\sage{A3}, A_4\sage
+                                                  {A4}\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (111.27794pt too wide) detected at line 69
+\OML/cmm/m/it/10 A[][]; A[][]; A[][]; A[][]
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{question}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{question}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment solution undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 \begin{solution}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no – in font nullfont!
+Missing character: There is no û in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ± in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ç in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ¥ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+! Undefined control sequence.
+<argument> \displaystyle {V = \sage 
+                                    {Vtetr}}
+l.72 ...nsuremath{\displaystyle{V = \sage{Vtetr}}}
+                                                  , –¥–ª–∏–Ω–∞ –≤—ã—Å–æ—Ç—ã ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ¥ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ∞ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no — in font nullfont!
+Missing character: There is no ã in font nullfont!
+! Undefined control sequence.
+<argument> \displaystyle {h = \sage 
+                                    {htetr}}
+l.72 ...nsuremath{\displaystyle{h = \sage{htetr}}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{solution}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 \end{solution}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{document} ended by \end{comment}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 \end{comment}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (46.1122pt too wide) in paragraph at lines 69--75
+    $[]$
+ []
+
+
+Overfull \hbox (41.52425pt too wide) in paragraph at lines 69--75
+[]$
+ []
+
+)
+! Emergency stop.
+<*> geom_pk1_vectors.tex
+                        
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 19 strings out of 493029
+ 291 string characters out of 6136234
+ 58082 words of memory out of 5000000
+ 3654 multiletter control sequences out of 15000+600000
+ 3986 words of font info for 15 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 18i,9n,12p,392b,73s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

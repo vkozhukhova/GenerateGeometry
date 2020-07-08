@@ -1,0 +1,683 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+\usepackage{indentfirst}
+\frenchspacing
+\usepackage{geometry}
+\geometry{left=3cm, right=1.5cm, top=2cm, bottom=1.5cm}
+\usepackage{ifthen}
+\usepackage{sagetex}
+\usepackage{soul}
+\newcounter{zno} % счетчик номеров задач
+%%% Дополнительная работа с математикой
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools,bm} %
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+\usepackage{etoolbox}
+\usepackage{enumitem}
+\usepackage{lastpage}
+\usepackage{fancyhdr} % Колонтитулы
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.5pt}  % Толщина линейки, отчеркивающей верхний колонтитул
+\renewcommand{\footrulewidth}{0.5pt}
+\lfoot{\textit{В.~Н. Кожухова}}
+\rfoot{%Иванов Иван Иванович
+	\input{\jobname.txt}%
+	}
+%\rhead{Верхний правый}
+\chead{\textbf{ДИТИ НИЯУ МИФИ}, осенний семестр 2017-2018 уч. года}
+%\lhead{Верхний левый}
+%\cfoot{c. \thepage \; из \pageref{LastPage}} % По умолчанию здесь номер страницы
+
+
+
+
+\makeatletter
+\AddEnumerateCounter{\asbuk}{\russian@alph}{щ} % русские буквы в списках
+\makeatother
+
+\usepackage{exsheets}
+\DeclareTranslation{Russian}{exsheets-exercise-name}{Задача}
+\DeclareTranslation{Russian}{exsheets-question-name}{Вопрос}
+\DeclareTranslation{Russian}{exsheets-solution-name}{Ответ}
+\SetupExSheets[points]{name=б.}
+
+%\def\teachers{}
+\newcommand{\mycomment}{\ifdef{\teachers}{\printsolutions}{}}	
+
+\begin{document}
+\thispagestyle{empty}
+%\maketitle
+
+\vspace{-10ex}
+	
+\begin{center}
+\Huge{Аналитическая геометрия}\\
+\vspace{-3ex}
+\section*{Текущий контроль 3}
+\end{center}
+\vspace{-2ex}	
+\textit{Стоимость: \pointssum* б.}
+\begin{flushleft}
+Направление подготовки: 09.03.02 Информационные системы и технологии %03.03.02 Физика %14.03.02 Ядерные физика и технологии 
+
+ФИО студента: %Иванов Иван Иванович
+ \input{\jobname.txt}
+
+Преподаватель: \textit{В.",Н. Кожухова}	
+\end{flushleft}	
+
+\subsection*{Прямая на плоскости}
+\begin{sagesilent}
+# генерируем точки М1 и М2
+M1 = vector([randint(-7, 7) for i in range(2)])
+M2 = vector([randint(-4, 4) for i in range(2)])
+# если направляющий вектор нулевой, перегенерируем
+while M1==M2:
+ M2 = vector([randint(-4, 4) for i in range(2)]) 
+# генерируем угол альфа
+S3 = FiniteEnumeratedSet([30,45,60,90,135,120,150]) # углы в градусах
+ang = S3.random_element() # случайный угол
+# направляющий вектор
+M1M2=M2-M1
+var('x,y,t')
+# если в уравнении нет переменной y
+if M1M2[0]==0:
+   eqline=x-M1[0]==0 # общее
+   eqparam=[solve(x-M1[0]==M1M2[0]*t,x),solve(y-M1[1]==M1M2[1]*t,y)] # параметрическое
+   eqang=eqline # с угловым коэффициентом
+   ccoef=-M1[0] # константа в уравнении
+   if M1[0]==0:
+     eqotr=eqline # в отрезках чтоб не было деления на ноль
+   else:
+     eqotr=x/M1[0]==1 # в отрезках
+else :
+   # если в уравнении нет переменной x
+   if M1M2[1]==0:
+      eqline=y-M1[1]==0 # общее
+      eqparam=[solve(x-M1[0]==M1M2[0]*t,x),solve(y-M1[1]==M1M2[1]*t,y)] # параметрическое
+      eqang=solve(eqline,y)[0] # с угловым коэффициентом
+      ccoef=-M1[1] # константа в уравнении
+      if M1[1]==0:
+        eqotr=eqline  # в отрезках чтоб не было деления на ноль
+      else:
+        eqotr=y/M1[1]==1 # в отрезках
+   else :
+      # если в уравнении есть обе переменных x и y
+      eqcan=(x-M1[0])/M1M2[0]==(y-M1[1])/M1M2[1] # каноническое
+      eqparam=[eqcan.left()==t, eqcan.right()==t]
+      eqparam=(solve(eqparam,x,y))[0] # параметрическое
+      eqcan2=eqcan.subtract_from_both_sides(eqcan.right())
+      eqline=eqcan2.multiply_both_sides(lcm(eqcan.left().denominator(), eqcan.right().denominator())) # общее
+      eqang=solve(eqline,y)[0] # с угловым коэффициентом
+      # коэффициенты уравнения
+      ccoef=eqline.left().coefficient(x,0).coefficient(y,0)
+      acoef=eqline.left().coefficient(x,1)
+      bcoef=eqline.left().coefficient(y,1)
+      # проверка константа в уравнении = 0
+      if ccoef==0:
+         eqotr=eqline # в отрезках чтоб не было деления на ноль
+      else:
+         eqotr=x/(-ccoef/acoef)+y/(-ccoef/bcoef)==1 # в отрезках
+# вектор нормали
+nl=vector([eqline.left().coefficient(x,1), eqline.left().coefficient(y,1)])
+# делим на +- длину нормального вектора
+if ccoef>0:
+   eqnorm=eqline.divide_both_sides(-nl.norm())
+else:
+   eqnorm=eqline.divide_both_sides(nl.norm())
+#  направляющие косинусы 
+cosline=vector([eqnorm.left().coefficient(x,1), eqnorm.left().coefficient(y,1)])
+#  прямая через М1 под углом альфа к Ох
+if ang==90:
+   eqang2=x==M1[0]
+else:
+   eqang2=y-M1[1]==tan(ang*pi/180)*(x-M1[0])
+   eqang2=solve(eqang2,y)[0]
+# треугольник АВС
+crossm = zero_matrix(2,2)
+while (det(crossm)==0) or (abs(det(crossm)/2) < 8) : 
+  A = vector([randint(-7, 7) for i in range(2)])
+  B = vector([randint(-4, 4) for i in range(2)])
+  C = vector([randint(-10, 10) for i in range(2)])
+  AB = B-A
+  AC = C-A
+  BC = C-B
+  crossm = matrix([AB, AC])
+chv=randint(1,3) # первая случайная вершина vertex1
+ch1=randint(1,2) # вторая случайная вершина vertex2
+# присваиваем координаты выбранным вершинам
+if chv == 1 :
+ vertex = r"A"
+ V1=A
+ if ch1==1:
+  vertex2=r"B"
+  V2=B
+  vertex3=r"C"
+  V3=C
+ else: 
+  vertex2=r"C"
+  V2=C
+  vertex3=r"B"
+  V3=B
+else :
+ if chv == 2 :
+  vertex = r"B"
+  V1=B
+  if ch1==1:
+   vertex2=r"A"
+   V2=A
+   vertex3=r"C"
+   V3=C
+  else: 
+   vertex2=r"C"
+   V2=C
+   vertex3=r"A"
+   V3=A
+ else :
+  vertex = r"C"
+  V1=C
+  if ch1==1:
+   vertex2=r"B"
+   V2=B
+   vertex3=r"A"
+   V3=A
+  else: 
+   vertex2=r"A"
+   V2=A
+   vertex3=r"B"
+   V3=B
+# генерируем L=line2
+a1=0
+b1=0
+c1=0
+# чтобы не было нулевых коэф-в и точки АВС не лежали бы на L
+while (a1==0) or (b1==0) or (c1==0) or (a1*A[0]+b1*A[1]+c1==0) or (a1*B[0]+b1*B[1]+c1==0) or (a1*C[0]+b1*C[1]+c1==0) :
+ a1=randint(-10, 10)
+ b1=randint(-10, 10)
+ c1=randint(-10, 10)
+ line2=a1*x+b1*y+c1==0
+# уравнения через вершину параллельно и перпендикулярно line2=L
+nLx=line2.left().coefficient(x,1)
+nLy=line2.left().coefficient(y,1)
+# параллельно
+eqLparal=nLx*(x-V1[0])+nLy*(y-V1[1])==0
+# перпендикулярно
+eqLorthog=(x-V1[0])/nLx-(y-V1[1])/nLy==0
+eqLorthog=eqLorthog.multiply_both_sides(eqLorthog.left().denominator())
+# точка пересечения высот
+# высота через вершину V1
+h1=(V3[0]-V2[0])*(x-V1[0])+(V3[1]-V2[1])*(y-V1[1])==0
+# высота через вершину V2
+h2=(V3[0]-V1[0])*(x-V2[0])+(V3[1]-V1[1])*(y-V2[1])==0
+# точка пересечения высот
+h1h2=solve([h1,h2],x,y)
+hh=vector([h1h2[0][0].right(), h1h2[0][1].right()])
+# длина перпендикуляра из V1 на медиану из V2
+# направляющий вектор медианы
+smedx=(V3[0]+V1[0])/2-V2[0]
+smedy=(V3[1]+V1[1])/2-V2[1]
+# если одна из координат напр. вектора медианы = 0
+if smedx==0:
+ vert2med=x-V2[0]==0
+ vert1h=(y-V1[1])==0
+else:
+ if smedy==0:
+  vert2med=y-V2[1]==0
+  vert1h=(x-V1[0])==0
+ else:
+  vert2med=(x-V2[0])/(smedx)-(y-V2[1])/(smedy)==0
+  vert1h=(x-V1[0])/vert2med.left().coefficient(x,1)-(y-V1[1])/vert2med.left().coefficient(y,1)==0
+vert2med=vert2med.multiply_both_sides(vert2med.left().denominator())
+vert1h=vert1h.multiply_both_sides(vert1h.left().denominator())
+# точка пересечения медианы и перпендикуляра
+medh=solve([vert2med,vert1h],x,y)
+medh=vector([medh[0][0].right(), medh[0][1].right()])
+# длина перпендикуляра
+perp=(medh-V1).norm()
+# уравнения биссектрис угла между прямыми V1V2 и V1V3
+# V1V2
+V1V2=(x-V1[0])*(V2[1]-V1[1])-(y-V1[1])*(V2[0]-V1[0])==0
+# V1V3
+V1V3=(x-V1[0])*(V3[1]-V1[1])-(y-V1[1])*(V3[0]-V1[0])==0
+# вектор нормали V1V2
+nV1V2=vector([V1V2.left().coefficient(x,1), V1V2.left().coefficient(y,1)])
+# вектор нормали V1V3
+nV1V3=vector([V1V3.left().coefficient(x,1), V1V3.left().coefficient(y,1)])
+# делим на +- длину нормального вектора
+if V1V2.left().coefficient(x,0).coefficient(y,0)>0:
+ v1v2norm=V1V2.divide_both_sides(-nV1V2.norm())
+else:
+ v1v2norm=V1V2.divide_both_sides(nV1V2.norm())
+if V1V3.left().coefficient(x,0).coefficient(y,0)>0:
+ v1v3norm=V1V3.divide_both_sides(-nV1V3.norm())
+else:
+ v1v3norm=V1V3.divide_both_sides(nV1V3.norm())
+denom=gcd((nV1V2.norm(),nV1V3.norm()))
+biss1=v1v2norm.left()-v1v3norm.left()
+biss2=v1v2norm.left()+v1v3norm.left()
+biss1=biss1.canonicalize_radical().mul(denom)
+biss2=biss2.canonicalize_radical().mul(denom)
+biss1=biss1.expand().collect(x).collect(y)
+biss2=biss2.expand().collect(x).collect(y)
+biss1=biss1.mul(biss1.denominator())
+biss2=biss2.mul(biss2.denominator())
+if (sign(biss1.subs(x==V2[0],y==V2[1])))==(sign(biss1.subs(x==V3[0],y==V3[1]))):
+ bissstr = r"внешнего"
+else:
+ bissstr = r"внутреннего"
+# найти точку симметричную V1 относительно V2V3
+# V2V3
+V2V3=(x-V2[0])*(V3[1]-V2[1])-(y-V2[1])*(V3[0]-V2[0])==0
+aV2V3=V2V3.left().coefficient(x,1)
+bV2V3=V2V3.left().coefficient(y,1)
+cV2V3=V2V3.left().coefficient(x,0).coefficient(y,0)
+eq1=bV2V3*(x-V1[0])-aV2V3*(y-V1[1])==0
+eq2=(aV2V3^2+bV2V3^2)*(x-V1[0])+2*aV2V3*(aV2V3*V1[0]+bV2V3*V1[1]+cV2V3)==0
+eq3=(aV2V3^2+bV2V3^2)*(y-V1[1])+2*bV2V3*(aV2V3*V1[0]+bV2V3*V1[1]+cV2V3)==0
+# точкa симметричная V1 относительно V2V3
+pp=vector([solve([eq1,eq2,eq3],x,y)[0][0].right(),solve([eq1,eq2,eq3],x,y)[0][1].right()])
+# график треугольника
+P1 = {'A':A,'B':B,'C':C}
+P2 = {'A':A,'B':B,'C':C, 'H':hh}
+P3 = {'A':A,'B':B,'C':C,'Q':pp}
+# настройка графика - минимум-максимум по отображаемым точкам
+def Min_Max_Values(P) :
+    x=vector(QQ,[i for i in range(len(P.values()))])
+    y=vector(QQ,[i for i in range(len(P.values()))])
+    for i in range(len(P.values())):
+        x[i]=P.values()[i][0]
+        y[i]=P.values()[i][1]
+    xmin=min(x)
+    xmax=max(x)
+    if sign(xmin) == sign(xmax):
+       if sign(xmin)==-1:
+          xmax=abs(xmax)
+       else :
+          if sign(xmin)==0:
+             xmin=-10
+             xmax=10
+          else:
+             xmin=-xmin
+    ymin=min(y)
+    ymax=max(y)
+    if sign(ymin) == sign(ymax):
+       if sign(ymin)==-1:
+          ymax=abs(ymax)
+       else :
+          if sign(ymin)==0:
+             ymin=-10
+             ymax=10
+          else:
+             ymin=-ymin  
+    res = vector(QQ,[xmin,xmax,ymin,ymax])
+    return res
+# min max graph 1-3
+mmg=Min_Max_Values(P1)
+xmin=mmg[0]
+xmax=mmg[1]
+ymin=mmg[2]
+ymax=mmg[3]
+# параллельно и перпендикулярно L
+G1=points(P1.values(), size=50, color='black', figsize=4, aspect_ratio=1, xmin=1.5*xmin, xmax=1.5*xmax, ymin=1.5*ymin, ymax=1.5*ymax)+line((A,B), color='black')+line((A,C), color='black')+line((B,C), color='black')+plot(solve(eqLparal,y)[0].right(), (x,1.5*xmin,1.5*xmax))+plot(solve(eqLorthog,y)[0].right(), (x,1.5*xmin,1.5*xmax)) + plot(solve(line2,y)[0].right(), (x,1.5*xmin,1.5*xmax), color='red', legend_label='L')
+i=0
+for p in P1.keys():
+  G1 += text('  %s'%p,P1.values()[i],horizontal_alignment='left',color='black')
+  i=i+1
+# высоты и их точка пересечения
+mmg=Min_Max_Values(P2)
+xmin=mmg[0]
+xmax=mmg[1]
+ymin=mmg[2]
+ymax=mmg[3]
+G2=points(P2.values(), size=50, color='black', figsize=4, aspect_ratio=1, xmin=1.5*xmin, xmax=1.5*xmax, ymin=1.5*ymin, ymax=1.5*ymax)+line((A,B), color='black')+line((A,C), color='black')+line((B,C), color='black')+plot(solve(h1,y)[0].right(), (x,1.5*xmin,1.5*xmax), legend_label='h1')+plot(solve(h2,y)[0].right(), (x,1.5*xmin,1.5*xmax), legend_label='h2')
+i=0
+for p in P2.keys():
+  G2 += text('  %s'%p,P2.values()[i],horizontal_alignment='left',color='black')
+  i=i+1
+# медиана и перпендикуляр
+#G3
+# биссектрисы и симметричная точка
+mmg=Min_Max_Values(P3)
+xmin=mmg[0]
+xmax=mmg[1]
+ymin=mmg[2]
+ymax=mmg[3]
+G4=points(P3.values(), size=50, color='black', figsize=4, aspect_ratio=1, xmin=1.5*xmin, xmax=1.5*xmax, ymin=1.5*ymin, ymax=1.5*ymax)+line((A,B), color='black')+line((A,C), color='black')+line((B,C), color='black')+plot(solve(biss1==0,y)[0].right(), (x,1.5*xmin,1.5*xmax), legend_label='b1')+plot(solve(biss2==0,y)[0].right(), (x,1.5*xmin,1.5*xmax), color='red', legend_label='b2')
+i=0
+for p in P3.keys():
+ G4 += text('  %s'%p,P3.values()[i],horizontal_alignment='left',color='black')
+ i=i+1
+ # генерируем L1 и L2
+a1=0
+b1=0
+c1=0
+while (a1==0) or (b1==0) or (c1==0) :
+  a1=randint(-10, 10)
+  b1=randint(-10, 10)
+  c1=randint(-10, 10)
+lineL1=a1*x+b1*y+c1==0
+a2=0
+b2=0
+c2=0
+# они не должны быть параллельны
+while (a2==0) or (b2==0) or (c2==0) or (a1*b2-a2*b1==0):
+  a2=randint(-10, 10)
+  b2=randint(-10, 10)
+  c2=randint(-10, 10)
+lineL2=a2*x+b2*y+c2==0
+# генерируем N
+N = vector([0,0])
+# он не должен на них лежать
+while (N==vector([0,0])) or (lineL1.left().subs(x==N[0],y==N[1])==0) or (lineL2.left().subs(x==N[0],y==N[1])==0):
+   N = vector([randint(-10, 10) for i in range(2)])
+# расстояние d
+d=randint(1, 10)
+# K - точка пересечения L1 и L2
+K=vector([solve([lineL1,lineL2],x,y)[0][0].right(),solve([lineL1,lineL2],x,y)[0][1].right()])
+# N - середина KM, находим M
+M=vector([2*N[0]-K[0],2*N[1]-K[1]])
+# сторона парал-ма L3 - через M // L1
+lineL3=a1*(x-M[0])+b1*(y-M[1])==0
+# сторона парал-ма L4 - через M // L3
+lineL4=a2*(x-M[0])+b2*(y-M[1])==0
+# диагональ d1 =KM
+lined1=(x-K[0])*(M[1]-K[1])-(y-K[1])*(M[0]-K[0])==0
+lined1=lined1.multiply_both_sides(lined1.left().denominator())
+lined1=lined1.divide_both_sides(gcd((lined1.left().coefficient(x,1), lined1.left().coefficient(y,1), lined1.left().coefficient(x,0).coefficient(y,0))))
+# R - точка пересечения L1 и L4
+R=vector([solve([lineL1,lineL4],x,y)[0][0].right(),solve([lineL1,lineL4],x,y)[0][1].right()])
+# диагональ d2 = NR
+lined2=(x-N[0])*(R[1]-N[1])-(y-N[1])*(R[0]-N[0])==0
+lined2=lined2.multiply_both_sides(lined2.left().denominator())
+lined2=lined2.divide_both_sides(gcd((lined2.left().coefficient(x,1), lined2.left().coefficient(y,1), lined2.left().coefficient(x,0).coefficient(y,0))))
+# через N перпендикулярно L1 = сторона NE
+lineNE=(x-N[0])*b1-(y-N[1])*a1==0
+lineNE=lineNE.multiply_both_sides(lineNE.left().denominator())
+lineNE=lineNE.divide_both_sides(gcd((lineNE.left().coefficient(x,1), lineNE.left().coefficient(y,1), lineNE.left().coefficient(x,0).coefficient(y,0))))
+# через N перпендикулярно L2 = сторона NF
+lineNF=(x-N[0])*b2-(y-N[1])*a2==0
+lineNF=lineNF.multiply_both_sides(lineNF.left().denominator())
+lineNF=lineNF.divide_both_sides(gcd((lineNF.left().coefficient(x,1), lineNF.left().coefficient(y,1), lineNF.left().coefficient(x,0).coefficient(y,0))))
+# E - точка пересечения L2 и NE
+E=vector([solve([lineL2,lineNE],x,y)[0][0].right(),solve([lineL2,lineNE],x,y)[0][1].right()])
+# F - точка пересечения L1 и NF
+F=vector([solve([lineL1,lineNF],x,y)[0][0].right(),solve([lineL1,lineNF],x,y)[0][1].right()])
+# сторона EF
+lineEF=(x-E[0])*(F[1]-E[1])-(y-E[1])*(F[0]-E[0])==0
+lineEF=lineEF.multiply_both_sides(lineEF.left().denominator())
+lineEF=lineEF.divide_both_sides(gcd((lineEF.left().coefficient(x,1), lineEF.left().coefficient(y,1), lineEF.left().coefficient(x,0).coefficient(y,0))))
+# для графика
+l1G=solve(lineL1,y)[0].right()
+l2G=solve(lineL2,y)[0].right()
+lNEG=solve(lineNE,y)[0].right()
+lNFG=solve(lineNF,y)[0].right()
+lEFG=solve(lineEF,y)[0].right()
+# график этих прямых и точек N, E, F
+P4 = {'N':N,'E':E,'F':F}
+mmg=Min_Max_Values(P4)
+xmin=mmg[0]
+xmax=mmg[1]
+ymin=mmg[2]
+ymax=mmg[3]
+G5=plot(l1G, (x,1.5*xmin,1.5*xmax), thickness=0.5, color='red', ymin=1.5*ymin, ymax=1.5*ymax, figsize=4, aspect_ratio=1, legend_label='L1') + plot(l2G, (x,1.5*xmin,1.5*xmax), thickness=0.5, color='green', ymin=1.5*ymin, ymax=1.5*ymax, legend_label='L2') + plot(lNEG, (x,1.5*xmin,1.5*xmax), thickness=0.5, color='black', ymin=1.5*ymin, ymax=1.5*ymax) + plot(lNFG, (x,1.5*xmin,1.5*xmax), thickness=0.5, color='black',ymin=1.5*ymin, ymax=1.5*ymax)+plot(lEFG, (x,1.5*xmin,1.5*xmax), thickness=0.5, color='black', ymin=1.5*ymin, ymax=1.5*ymax)+ points(P4.values(), color='black', ymin=1.5*ymin, ymax=1.5*ymax, xmin=1.5*xmin, xmax=1.5*xmax)
+i=0
+for p in P4.keys():
+  G5 += text('  %s'%p,P4.values()[i],horizontal_alignment='left',color='black')
+  i=i+1
+# расстояние от точки N до прямой L1
+# вектор нормали
+nl1=vector([a1, b1])
+# делим на +- длину нормального вектора
+if c1>0:
+  lineL1norm=lineL1.divide_both_sides(-nl1.norm())
+else:
+  lineL1norm=lineL1.divide_both_sides(nl1.norm())
+# расстояние
+dNL1=abs(lineL1norm.left().subs(x==N[0], y==N[1]))
+# вектор нормали
+nl2=vector([a2, b2])
+# делим на +- длину нормального вектора
+if c2>0:
+  lineL2norm=lineL2.divide_both_sides(-nl2.norm())
+else:
+  lineL2norm=lineL2.divide_both_sides(nl2.norm())
+if sign(lineL2norm.left().subs(x==N[0], y==N[1])) == sign(lineL2norm.left().subs(x==0, y==0)):
+  intercept=r"не"
+else:
+  intercept=r""
+# уравнения прямых паралелльных L1
+var('cc')
+newL=a1*x+b1*y+cc==0
+newLNorm=newL.divide_both_sides(sqrt(a1^2+b1^2))
+U=vector([0,solve(lineL1.subs(x==0),y)[0].right()])
+eq1=newLNorm.left().subs(x==U[0],y==U[1])==d
+eq2=newLNorm.left().subs(x==U[0],y==U[1])==-d
+cc1=solve(eq1,cc)[0].right()
+cc2=solve(eq2,cc)[0].right()
+G6=plot(solve(lineL1,y)[0].right(), (x,-10,10), aspect_ratio=1, color='red', figsize=4)+plot(solve(newL(cc=cc1),y)[0].right(), (x,-10,10), aspect_ratio=1, figsize=4)+plot(solve(newL(cc=cc2),y)[0].right(), (x,-10,10), aspect_ratio=1, figsize=4)
+# квадрат
+# сторона Lp через N перпендикулярно L1 ( = NE)
+lineLp=lineNE
+ap=lineLp.left().coefficient(x,1)
+bp=lineLp.left().coefficient(y,1)
+# сторона Lq через N параллельно L1 
+lineLq=a1*(x-N[0])+b1*(y-N[1])==0
+# стороны Lr и Lt параллельно Lp на расстоянии dNL1
+lineLrt=ap*x+bp*y+cc==0
+lineLrtNorm=lineLrt.divide_both_sides(sqrt(ap^2+bp^2))
+eq1=lineLrtNorm.left().subs(x==N[0],y==N[1])==dNL1
+eq2=lineLrtNorm.left().subs(x==N[0],y==N[1])==-dNL1
+cc3=solve(eq1,cc)[0].right()
+cc4=solve(eq2,cc)[0].right()
+G7=plot(solve(lineL1,y)[0].right(), (x,-15,15), aspect_ratio=1, color='red', figsize=4, legend_label='L1', ymin=-20, ymax=20)+plot(solve(lineLrt(cc=cc3),y)[0].right(), (x,-10,10), aspect_ratio=1, figsize=4)+plot(solve(lineLrt(cc=cc4),y)[0].right(), (x,-10,10), aspect_ratio=1, figsize=4)+plot(solve(lineLp,y)[0].right(), (x,-10,10), aspect_ratio=1, color='green', figsize=4)+plot(solve(lineLq,y)[0].right(), (x,-10,10), aspect_ratio=1, color='purple', figsize=4)+ point(N, color='black', xmin=-10, xmax=10)+text('  N',N,horizontal_alignment='left',color='black')
+# угол между прямыми
+angL1L2=arccos(abs(nl1.dot_product(nl2)/(nl1.norm()*nl2.norm())))
+# отклонения точек O и N от L1 и L2
+deltaOL1=lineL1norm.left().subs(x==0,y==0)
+deltaOL2=lineL2norm.left().subs(x==0,y==0)
+deltaNL1=lineL1norm.left().subs(x==N[0],y==N[1])
+deltaNL2=lineL2norm.left().subs(x==N[0],y==N[1])
+# angO = 1 если O в остром углу и = 2 если в тупом
+n1orient=vector([lineL1norm.left().coefficient(x,1), lineL1norm.left().coefficient(y,1)])
+n2orient=vector([lineL2norm.left().coefficient(x,1), lineL2norm.left().coefficient(y,1)])
+if n1orient.dot_product(n2orient)>0:
+   angO = -1 # в тупом
+else:
+   angO = 1 # в остром, в т.ч. в прямом
+# взаимное расположение O и N
+if (sign(deltaOL1)==-sign(deltaNL1)) and (sign(deltaOL2)==-sign(deltaNL2)):
+   angON = 1 # вертикальные углы
+   angN = angO # вертикальные углы
+else:
+   if (sign(deltaOL1)==sign(deltaNL1)) and (sign(deltaOL2)==sign(deltaNL2)):
+      angON = 2 # один и тот же угол
+      angN = angO
+   else:
+      angON = 3 # смежные углы
+      angN = -angO
+if angN==1:
+   angNstr=r"остром"
+else:
+   angNstr=r"тупом"
+if angON==1:
+   angONstr=r"вертикальном"
+else:
+   if angON==2:
+      angONstr=r"одном"
+   else:
+      angONstr=r"смежном"
+# уравнения биссектрис угла между прямыми L1 и L2
+denom=gcd((nl1.norm(),nl2.norm()))
+biss3=lineL1norm.left()-lineL2norm.left()
+biss4=lineL1norm.left()+lineL2norm.left()
+biss3=biss3.canonicalize_radical().mul(denom)
+biss4=biss4.canonicalize_radical().mul(denom)
+biss3=biss3.expand().collect(x).collect(y)
+biss4=biss4.expand().collect(x).collect(y)
+biss3=biss3.mul(biss3.denominator())
+biss4=biss4.mul(biss4.denominator())
+G8=plot(l1G, (x,-10,10), color='red', figsize=4, aspect_ratio=1, legend_label='L1', ymin=-15, ymax=15) + plot(l2G, (x,-10,10), color='green', legend_label='L2') + plot(solve(biss3==0,y)[0].right(), (x,-10,10), legend_label='b1') + plot(solve(biss4==0,y)[0].right(), (x,-10,10), color='black', legend_label='b2')+ point(N, color='black', xmin=-10, xmax=10)+text('  N',N,horizontal_alignment='left',color='black')
+\end{sagesilent}
+
+\vspace{2ex}	
+\begin{question}{1}
+Две точки на плоскости заданы координатами: $M_1\sage{M1}$ и $M_2\sage{M2}$,\\ $\angle\alpha=\sage{ang}^\circ$ -- некоторый угол.
+
+Составить:
+\begin{enumerate}
+	\item Уравнение прямой, проходящей через точку $M_1$ и образующей с осью абсцисс $\angle\alpha$.
+	\item Уравнение прямой на плоскости, проходящей через
+	точки $M_1$ и $M_2$. Записать это уравнение в следующих видах:
+	\begin{enumerate}[label=\asbuk*),ref=\asbuk*]
+		\item общем;
+		\item каноническом;
+		\item параметрическом;
+		\item с угловым коэффициентом;
+		\item в отрезках;
+		\item нормальном. 
+	\end{enumerate}
+	Указать направляющие косинусы данной прямой.
+\end{enumerate}
+\end{question}
+\begin{solution}
+через точку под углом: \ensuremath{\displaystyle{\sage{eqang2}}} 
+
+общее уравнение: \ensuremath{\displaystyle{\sage{eqline}}}, 
+
+направляющий вектор: \ensuremath{\displaystyle{M_1M_2= \sage{M1M2}}}, 
+
+каноническое: \ensuremath{\displaystyle{\dfrac{\sage{x-M1[0]}}{\sage{M1M2[0]}}=\dfrac{\sage{y-M1[1]}}{\sage{M1M2[1]}}}}, 
+
+параметрическое: \ensuremath{\displaystyle{\sage{eqparam}}}
+
+с угловым коэффициентом: \ensuremath{\displaystyle{\sage{eqang}}},
+
+в отрезках: \ensuremath{\displaystyle{\sage{eqotr}}}, 
+
+нормальное: \ensuremath{\displaystyle{\sage{eqnorm}}}, 
+
+направляющие косинусы: \ensuremath{\displaystyle{\sage{cosline}}}
+\end{solution}
+\begin{question}{1}\label{ztriag}
+Даны вершины треугольника $ABC$ и прямая $L$: \[A\sage{A}, B\sage{B}, C\sage{C}, L: \sage{line2}\]
+\begin{enumerate}
+	\item Составить уравнения прямой $L_1$, проходящей через точку $\sagestr{vertex}$ параллельно прямой $L$ и прямой $L_2$, проходящей через точку $\sagestr{vertex}$ перпендикулярно прямой $L$.  
+	\item Определить точку пересечения высот треугольника.
+	\item Вычислить длину перпендикуляра, опущенного из вершины $\sagestr{vertex}$ на медиану, проведенную из вершины $\sagestr{vertex2}$.
+\end{enumerate}
+\end{question}
+\begin{solution}
+\sageplot{G1} \sageplot{G2}\ 
+ 
+параллельно: \ensuremath{\displaystyle{\sage{eqLparal}}}
+
+перпендикулярно: \ensuremath{\displaystyle{\sage{eqLorthog}}}
+
+точка пересечения высот: \ensuremath{\displaystyle{\sage{h1}, \sage{h2}, \sage{h1h2}}}
+
+медиана: \ensuremath{\displaystyle{\sage{vert2med}}}, перпендикуляр: \ensuremath{\displaystyle{\sage{vert1h}}},
+
+длина перпендикуляра: \ensuremath{\displaystyle{\sage{perp}}}
+
+\end{solution}
+
+\begin{question}{1}
+	По данным задачи \ref{ztriag}:
+	\begin{enumerate}
+		\item Составить уравнения биссектрис внутреннего и внешнего углов треугольника $ABC$ при вершине $\sagestr{vertex}$. 
+		\item Найти координаты точки $Q$, симметричной точке $\sagestr{vertex}$  относительно прямой $\sagestr{vertex2}\sagestr{vertex3}$. 
+	\end{enumerate}
+\end{question}
+\begin{solution}
+биссектрисы: 
+
+\ensuremath{\displaystyle{\sage{biss1}=0}} 	
+
+-- биссектриса $\sagestr{bissstr}$ угла
+
+\ensuremath{\displaystyle{\sage{biss2}=0}}
+
+симметричная точка: \ensuremath{\displaystyle{\sage{pp}}}
+
+\sageplot{G4}
+\end{solution}
+\begin{question}{1}\label{zlines}
+Данa точка $N$ и две прямые $L_1$ и $L_2$:
+\[N\sage{N}, L_1: \sage{lineL1}, L_2: \sage{lineL2}\]	
+\begin{enumerate}
+	\item Пусть прямые $L_1$ и $L_2$ -- стороны параллелограмма, а $N$ -- точка пересечения его диагоналей. Написать уравнения остальных сторон и диагоналей параллелограмма.
+	\item Составить уравнения сторон треугольника, если одна из его вершин -- точка $N$, а прямые $L_1$ и $L_2$ -- высоты этого треугольника.
+	\item Найти расстояние от точки $N$ до прямой $L_1$. 
+	\item Написать нормальное уравнение прямой $L_1$. Пересекает прямая $L_2$ отрезок $ON$ или нет? (точка $O$ -- начало координат). 
+\end{enumerate}
+\end{question}
+\begin{solution}
+стороны параллелограмма: \ensuremath{\displaystyle{\sage{lineL3}, \sage{lineL4}}}
+
+диагонали параллелограмма: \ensuremath{\displaystyle{\sage{lined1}, \sage{lined2}}}
+
+уравнения сторон треугольника:
+
+ \ensuremath{\displaystyle{\sage{lineNE}, \sage{lineNF}, \sage{lineEF} }}
+ 
+расстояние от $N$ до $L_1$: \ensuremath{\displaystyle{\sage{dNL1}\approx\sage{n(dNL1, digits=4)}}}
+
+нормальное уравнение $L_1$: \ensuremath{\displaystyle{\sage{lineL1norm}}}
+
+$L_2$ $\sagestr{intercept}$ пересекает $ON$
+
+\sageplot{G5} 
+\end{solution}	
+
+\begin{question}{1}
+	По данным задачи \ref{zlines}:
+\begin{enumerate}
+	\item Написать уравнения прямых, параллельных $L_1$ и отстоящих от нее на расстоянии $d = \sage{d}$. 
+	\item Пусть $L_1$ -- одна из сторон квадрата, а точка $N$ -- его вершина. Написать уравнения остальных сторон квадрата. 
+	\item Определить аналитически, какой из углов, тупой или острый, образованный прямыми $L_1$ и $L_2$, содержит точку $N$. Определить величину угла между прямыми $L_1$ и $L_2$. 
+	\item Составить уравнение биссектрисы угла между прямыми $L_1$ и $L_2$, смежного с углом, содержащим точку $N$.
+\end{enumerate}
+\end{question}
+\begin{solution}
+прямые, параллельные $L_1$ на расстоянии $\sage{d}$: 
+
+\ensuremath{\displaystyle{\sage{newL(cc=cc1)}, \sage{newL(cc=cc2)}}}
+
+стороны квадрата: \ensuremath{\displaystyle{\sage{lineLp}, \sage{lineLq}}}
+
+\ensuremath{\displaystyle{\sage{lineLrt(cc=cc3)}, \sage{lineLrt(cc=cc4)}}}
+
+угол между $L_1$ и $L_2$: \ensuremath{\displaystyle{\sage{angL1L2}\approx \sage{round(angL1L2*180/pi)}^\circ}}	
+
+$N$ расположена в $\sagestr{angNstr}$ углу
+
+$O$ и $N$ находятся в $\sagestr{angONstr}$ углу
+
+биссектрисы углов между $L_1$ и $L_2$: 
+ 
+\ensuremath{\displaystyle{\sage{biss3}=0}} 	
+
+\ensuremath{\displaystyle{\sage{biss4}=0}}
+
+\sageplot{G6} \sageplot{G7} 
+
+\sageplot{G8}
+\end{solution}
+
+\mycomment
+
+\begin{tabular}{|l|*{\numberofquestions}{c|}c|}\hline
+	Вопрос &
+	\ForEachQuestion{\QuestionNumber{#1}\iflastquestion{}{&}} &
+	Всего \\ \hline
+	Баллы &
+	\ForEachQuestion{\GetQuestionProperty{points}{#1}\iflastquestion{}{&}} &
+	\pointssum* \\ \hline
+	Набрано &
+	\ForEachQuestion{\iflastquestion{}{&}} & \\ \hline
+\end{tabular}
+	
+\end{document}

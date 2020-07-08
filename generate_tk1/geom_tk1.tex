@@ -1,0 +1,283 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+\usepackage{indentfirst}
+\frenchspacing
+\usepackage{geometry}
+\geometry{left=3cm, right=1.5cm, top=2cm, bottom=1.5cm}
+\usepackage{ifthen}
+\usepackage{sagetex}
+\usepackage{soul}
+\newcounter{zno} % счетчик номеров задач
+%%% Дополнительная работа с математикой
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools,bm} %
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+\usepackage{etoolbox}
+\usepackage{enumitem}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr} % Колонтитулы
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.5pt}  % Толщина линейки, отчеркивающей верхний колонтитул
+\renewcommand{\footrulewidth}{0.5pt}
+\lfoot{\textit{В.~Н. Кожухова}}
+\rfoot{%Иванов Иван Иванович
+	\input{\jobname.txt}%
+}
+%\rhead{Верхний правый}
+\chead{\textbf{ДИТИ НИЯУ МИФИ}, осенний семестр 2017-2018 уч. года}
+%\lhead{Верхний левый}
+%\cfoot{c. \thepage \; из \pageref{LastPage}} % По умолчанию здесь номер страницы
+
+
+\makeatletter
+\AddEnumerateCounter{\asbuk}{\russian@alph}{щ}
+\makeatother
+%\usepackage[explicit]{titlesec}
+
+%\renewcommand{\thesection}{Текущий контроль \arabic{section}.}
+%\newbool{answers}
+%\booltrue{answers}
+%\newcommand{\zadacha}[2][Нет ответа.]{%
+
+%\addtocounter{zno}{1}
+%Задача \arabic{zno}. #2%
+
+%\ifbool{answers}{\textbf{Ответ}. #1 \vspace{5mm}}{\vspace{5mm}}
+%}
+%\newcommand{\zadacha}[2]{%
+%\refstepcounter{zno}\label{#1}
+%\textbf{Задача \arabic{zno}}. #2%
+%}
+
+%\newcommand{\mycomment}[1]{\hphantom{#1}}
+%\newcommand{\mycomment}[1]{#1}
+
+%\def\teachers{}
+%\newcommand{\mycomment}[1]{\ifdef{\teachers}{#1}{\hphantom{#1}}}	
+
+\usepackage{exsheets}
+\DeclareTranslation{Russian}{exsheets-exercise-name}{Задача}
+\DeclareTranslation{Russian}{exsheets-question-name}{Вопрос}
+\DeclareTranslation{Russian}{exsheets-solution-name}{Ответ}
+\SetupExSheets[points]{name=б.}
+
+%\def\teachers{}
+\newcommand{\mycomment}{\ifdef{\teachers}{\printsolutions}{}}
+
+\begin{document}
+\thispagestyle{empty}
+\vspace{-10ex}
+
+\begin{center}
+	\Huge{Аналитическая геометрия}\\
+	\vspace{-3ex}
+	\section*{Текущий контроль 1}
+\end{center}
+\vspace{-2ex}	
+\textit{Стоимость: \pointssum* б.}
+\begin{flushleft}
+	Направление подготовки: 09.03.02 Информационные системы и технологии %14.03.02 Ядерные физика и технологии  03.03.02 Физика 
+	
+	ФИО студента: %Иванов Иван Иванович
+	\input{\jobname.txt}
+	
+	Преподаватель: \textit{В.",Н. Кожухова}	
+\end{flushleft}	
+
+\subsection*{Векторная алгебра}
+\begin{sagesilent}
+# 1) Скалярное и векторное произведение векторов через координаты
+a1 = vector([randint(-7, 7) for i in range(3)])
+b1 = vector([randint(-4, 4) for i in range(3)])
+anga1b1 = a1.dot_product(b1)/(a1.norm()*b1.norm())
+pra1b1 = a1.dot_product(b1)/b1.norm()
+prc=0
+while prc==0:
+   prc = randint(-6,6)
+s1=[]
+while s1==[]:
+ var('x,y,z')
+ ch1 = randint(1,3)
+ if ch1 == 1 :
+   os = r"Ox"
+   eqn = [a1[0]*x+a1[1]*y+a1[2]*z==0, b1[0]*x+b1[1]*y+b1[2]*z==0,x == prc]
+ else :
+    if ch1 == 2 :
+       os = r"Oy"
+       eqn = [a1[0]*x+a1[1]*y+a1[2]*z==0, b1[0]*x+b1[1]*y+b1[2]*z==0,y == prc]
+    else :
+       os = r"Oz"
+       eqn = [a1[0]*x+a1[1]*y+a1[2]*z==0, b1[0]*x+b1[1]*y+b1[2]*z==0,z == prc]
+ s1 = solve(eqn, x,y,z)
+# 2) Разложение вектора по векторам
+crossm = zero_matrix(3,3)
+while (det(crossm)==0): 
+   p = vector([randint(-7, 7) for i in range(3)])
+   q = vector([randint(-3, 3) for i in range(3)])
+   r = vector([randint(-10, 10) for i in range(3)])
+   crossm = matrix([p, q, r])
+coord = zero_vector(3)
+while coord == zero_vector(3) : 
+   coord = vector([randint(-3, 3) for i in range(3)])
+x2 = coord[0]*p + coord[1]*q + coord[2]*r
+# 3) Площадь параллелограмма со сторонами |u| и |v|
+S3 = FiniteEnumeratedSet([30,45,60,90,135,120,150]) # углы в градусах
+ang = S3.random_element() # случайный угол
+normA = randint(1,7) # длины векторов a и b
+normB = randint(1,5)
+ucoord = zero_vector(2)
+vcoord = zero_vector(2)
+while ucoord==zero_vector(2) or vcoord==zero_vector(2) or det(matrix([ucoord,vcoord]))==0:
+  au = randint(-5,5) # u = au*a+bu*b -- разложение u по a и b
+  bu = randint(-6,6) # генерим случайные коэффициенты разложения
+  av = randint(-7,7) # v = av*a+bv*b -- разложение v по a и b
+  bv = randint(-4,4)
+  ucoord = vector([au,bu])
+  vcoord = vector([av,bv])
+var('a,b')
+basisab = vector([a,b])
+u = basisab.dot_product(ucoord)
+v = basisab.dot_product(vcoord)
+muv = matrix([ucoord, vcoord])
+Sparal = abs(normA*normB*sin(ang*pi/180)*det(muv))  
+ad1 = au+av # коэф-ты разложения векторов диагоналей: u+v ; u-v
+bd1 = bu+bv
+ad2 = au-av
+bd2 = bu-bv
+# скалярное произведение векторов диагоналей
+d1d2 = ad1*ad2*normA^2+(ad1*bd2+ad2*bd1)*normA*normB*cos(ang*pi/180)+bd1*bd2*normB^2
+# длины диагоналей
+normd1 = sqrt(ad1*ad1*normA^2+2*ad1*bd1*normA*normB*cos(ang*pi/180)+bd1*bd1*normB^2)
+normd2 = sqrt(ad2*ad2*normA^2+2*ad2*bd2*normA*normB*cos(ang*pi/180)+bd2*bd2*normB^2)
+# угол между диагоналями
+angd1d2 = d1d2/(normd1*normd2)
+# 4) Проверка компланарности векторов
+choose = randint(1,2) #1 - ЛЗ, #2 ЛНЗ
+if choose==1 :
+  a4 = vector([randint(-7, 7) for i in range(3)])
+  b4 = vector([randint(-3, 3) for i in range(3)])
+  c4 = randint(-5,5)*a4 + randint(-5,5)*b4
+else :
+  a4 = vector([randint(-7, 7) for i in range(3)])
+  b4 = vector([randint(-3, 3) for i in range(3)])
+  c4 = vector([randint(-5, 5) for i in range(3)])
+abc = c4.dot_product(a4.cross_product(b4))  
+if abc == 0 :
+    compl = r"компланарны"
+else :
+    compl = r"не компланарны"
+# 5) Вычисление объема тетраэдра, вершины А1, А2, А3, А4
+A1 = vector([randint(-7, 7) for i in range(3)])
+A2 = vector([randint(-5, 5) for i in range(3)])
+A3 = vector([randint(-3, 3) for i in range(3)])
+A4 = vector([randint(-5, 5) for i in range(3)])
+A1A2 = A2-A1
+A1A3 = A3-A1
+A1A4 = A4-A1
+Sosn = (A1A2.cross_product(A1A3)).norm()/2
+Vtetr = abs(A1A4.dot_product(A1A2.cross_product(A1A3)))/6
+htetr = 3*Vtetr/Sosn
+# 6) Работа сил
+f1 = vector([randint(-7, 7) for i in range(3)])
+f2 = vector([randint(-6, 6) for i in range(3)])
+f3 = vector([randint(-3, 3) for i in range(3)])
+var('i,j,k')
+mybasis = vector([i,j,k])
+A6 = vector([randint(-3, 3) for i in range(3)])
+B6 = vector([randint(-5, 5) for i in range(3)])
+A6B6 = B6-A6
+f = f1 + f2 + f3
+Answ6 = f.dot_product(A6B6)
+# 7) Моменты сил
+C7 = vector([randint(-7, 7) for i in range(3)])
+D7 = vector([randint(-5, 5) for i in range(3)])
+G7 = vector([randint(-6, 4) for i in range(3)])
+D7C7 = C7 - D7
+G7C7 = C7 - G7
+MD = D7C7.cross_product(f)
+MG = G7C7.cross_product(f)
+\end{sagesilent}
+
+\vspace{2ex}	
+
+\begin{question}{1}\label{z1}
+	Даны векторы $\bm a$ и $\bm b$. 
+	\[\bm{a}=\sage{a1}, \bm{b}=\sage{b1}\] 
+	Найдите:
+	\begin{enumerate}%[label=\asbuk*),ref=\asbuk*]
+		\item скалярное и векторное произведение векторов $\bm a$ и $\bm b$; 
+		\item угол между векторами $\bm a$ и $\bm b$; 
+		\item проекцию вектора $\bm a$ на вектор $\bm b$; 
+		\item вектор $\bm c$, перпендикулярный векторам $\bm a$ и $\bm b$, если проекция вектора $\bm c$ на ось \textit{\sagestr{os}} равна $\sage{prc}$. 
+	\end{enumerate}
+\end{question}	
+\begin{solution}
+	\ensuremath{
+		\displaystyle{\left(\bm{a},\bm{b}\right)=\sage{a1.dot_product(b1)}, \left[\bm{a},\bm{b}\right]=\sage{a1.cross_product(b1)}, \cos\alpha = \sage{anga1b1}, \, pr_{\bm b}\bm a = \sage{pra1b1}}}, \\
+	$\bm c = \sage{s1[0]}$  
+\end{solution}
+
+\begin{question}{1}
+	Разложить вектор $\bm x$ по векторам $\bm p, \bm q, \bm r$ : $\bm x = \alpha\bm p + \beta\bm q + \gamma\bm r$, если
+	\[\bm{x}=\sage{x2}, \bm{p}=\sage{p}, \bm{q}=\sage{q}, \bm{r}=\sage{r}\]
+\end{question}
+\begin{solution}
+	\ensuremath{\alpha = \sage{coord[0]}, \beta = \sage{coord[1]}, \gamma = \sage{coord[2]}}
+\end{solution}
+
+\begin{question}{1}
+	Вычислить площадь параллелограмма, построенного на векторах $\bm u$ и $\bm v$, и найти угол между его диагоналями, если:
+	$\bm{u}=\sage{u}, \bm{v}=\sage{v}$, при этом о векторах $\bm a$ и $\bm b$ известно, что: 
+	$|\bm a|=\sage{normA}, |\bm b| = \sage{normB}$,
+	$\angle\left(\bm a, \bm b\right)=\sage{ang}^\circ$.
+\end{question}
+\begin{solution}
+	\ensuremath{\displaystyle{S = \sage{latex(Sparal)}, \cos\angle\left(\bm{d_1}, \bm{d_2}\right)=\sage{angd1d2}}}
+\end{solution}
+
+\begin{question}{1}
+	\begin{enumerate}
+\item Проверить, компланарны ли векторы $\bm a$, $\bm b$ и $\bm c$:
+\[\bm{a}=\sage{a4}, \bm{b}=\sage{b4}, \bm{c}=\sage{c4}\]
+\item Вычислить объем тетраэдра с вершинами в точках $A_1, A_2, A_3, A_4$ и его высоту, опущенную из вершины $A_4$ на грань $A_1 A_2 A_3$:
+\[A_1\sage{A1}, A_2\sage{A2}, A_3\sage{A3}, A_4\sage{A4}\]
+	\end{enumerate}	
+\end{question}
+\begin{solution}
+	Векторы \sagestr{compl}, \ensuremath{\bm{abc} = \sage{abc}}
+	
+	Объем тетраэдра \ensuremath{\displaystyle{V = \sage{Vtetr}}}, длина высоты \ensuremath{\displaystyle{h = \sage{htetr}}}
+\end{solution}
+
+\begin{question}{1}
+	На материальную точку действуют три силы: $\bm{f_1}, \bm{f_2} \text{ и } \bm{f_3}$:
+	\[\bm{f_1}=\sage{mybasis.dot_product(f1)}, \bm{f_2}=\sage{mybasis.dot_product(f2)}, \bm{f_3}=\sage{mybasis.dot_product(f3)}\]
+	 \begin{enumerate}
+\item Найти работу равнодействующей этих сил по перемещению данной материальной точки из точки $A$ в точку $B$, если
+$A\sage{A6}, B\sage{B6}$.
+\item Cилы $\bm{f_1}, \bm{f_2} \text{ и } \bm{f_3}$ приложены к точке $C\sage{C7}$. Сравните модули моментов равнодействующей этих сил относительно точек $D\sage{D7}$ и $G\sage{G7}$.
+	 \end{enumerate}
+\end{question}
+\begin{solution}
+	$A=\sage{Answ6}$
+	
+	$M_D (C)=\sage{MD.norm()}\approx\sage{n(MD.norm(), digits=4)}, M_G (C)=\sage{MG.norm()}\approx\sage{n(MG.norm(), digits=4)}$
+\end{solution}
+
+\mycomment
+
+\begin{tabular}{|l|*{\numberofquestions}{c|}c|}\hline
+	Вопрос &
+	\ForEachQuestion{\QuestionNumber{#1}\iflastquestion{}{&}} &
+	Всего \\ \hline
+	Баллы &
+	\ForEachQuestion{\GetQuestionProperty{points}{#1}\iflastquestion{}{&}} &
+	\pointssum* \\ \hline
+   Набрано &
+   \ForEachQuestion{\iflastquestion{}{&}} & \\ \hline
+\end{tabular}
+\end{document}
